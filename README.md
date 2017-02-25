@@ -1,2 +1,2 @@
-# kaustuv-praz.github.io
+# csy1018-assign1
 My Git
