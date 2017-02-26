@@ -10,13 +10,13 @@ div{
 
 }
 header{ /*header css*/
-  background: #946DB6;
+  background: #412e52;
   width: 100%;
   height: 100px;
   position: fixed;      /* fix the header on it's original position even if the screen is scrolled */
   display: flex;
   justify-content: flex-end;    /* align all felx-items on right side */
-  box-shadow: 4px 2px 50px #845699;   /* drops shadow on div.image */
+  box-shadow: 1px 3px 20px #845699;   /* drops shadow on div.image */
   z-index: 3;       /* makes header always on top of other containers */
 }
 
@@ -25,20 +25,20 @@ div.banner{   /* properties for div.banner */
   background: ;
   height: 100px;
   width: 50%;
+  display: flex;
+  align-items: flex-end; /* align div.banner items at bottom of "div" */
 }
 nav{
   background: ;
   width: 50%;
   display: flex;
-
-  justify-content: flex-end;
+  justify-content: flex-end;        /* nav content align on right */
   color: #BB96CC;
-  height: 100%;
+  height: 100px;
 }
 ul{
-  background: ;
   height: 100%;
-  margin: 0;
+  margin: 0px;
   display: flex;
   flex-direction: row;      /* display ul items in row i.e, the <li> elements */
   padding: 0px;
@@ -49,23 +49,27 @@ li{
   height: 90px;
   background:  ;
   padding: 0px 20px 10px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
-  margin: 0;
   display: flex;
   align-items: flex-end;        /* put the <li> element at bottom of total height */
 }
+
 li:hover{   /* hover property. apply the following property when mouse pointer is hover above the <li> element */
   color: white;
   background: #9979A8;
+  height: 87px;     /* gives animation of nav element i.e, move little up while hover */
 }
-/* h1{
+h1{
   padding: 10px;
-  margin: 10px;
+  margin: 0px;
   border-radius: 4px;
-  background: #8A3AD0;
-  color: white;
-  font-family: cursive;
-  width: 55px;
-} */
+  color: #BB96CC;
+  font-family: ;
+}
+
+h1:hover{     /* hover property. apply the following property when mouse pointer is hover above the <h1> element */
+  color: #c2bdce;
+  margin: 0px 0px 3px 0px;
+}
 
 div.image{
   margin: 100px 0 0 0;      /* header use "fixed position" so to overcome the cons, if this margin is not use
@@ -77,7 +81,6 @@ div.image{
   z-index: ;
 }
 
-
 main{
   margin: 450px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
                                 then "main" would go behind the "div.image" */
@@ -88,11 +91,19 @@ main{
   background: #C29AE5;
   box-shadow: 0px 0px 100px 10px #927D9C;   /* drops shadow on it's upper division i.e, "div.image" */
 }
-
+section{          /* applied for bio.html */
+  margin: 100px 0 0 0;
+  z-index: 1;
+  position: ;
+  height: 700px;
+  width: 100%;
+  background: #C29AE5;
+  box-shadow: 0px 0px 100px 10px #927D9C;   /* drops shadow on it's upper division i.e, "div.image" */
+}
 footer{
   height: 350px;
   background: #231529;
   z-index: 2;
-  box-shadow: 0px 0px 100px 10px #3E244A;   /* drops shadow on "main" */
+  box-shadow: 0px 0px 40px 10px #3E244A;   /* drops shadow on "main" */
 
 }
