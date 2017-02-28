@@ -51,12 +51,15 @@ li{
   padding: 0px 20px 10px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
   display: flex;
   align-items: flex-end;        /* put the <li> element at bottom of total height */
+
 }
 
 li:hover{   /* hover property. apply the following property when mouse pointer is hover above the <li> element */
   color: white;
   background: #9979A8;
   height: 87px;     /* gives animation of nav element i.e, move little up while hover */
+  background: linear-gradient(#412e52, #583973);
+  box-shadow: 0px 2px #f2e1fb;
 }
 h1{
   padding: 10px;
@@ -75,7 +78,7 @@ div.image{
   margin: 100px 0 0 0;      /* header use "fixed position" so to overcome the cons, if this margin is not use
                                 then div.image would go behind the header */
   width: 100%;
-  background: #C065EA;
+  background: #6c488d;
   height: 450px;
   position:   fixed;      /* position is fixed same as header */
   z-index: ;
@@ -89,7 +92,7 @@ main{
   height: 700px;
   width: 100%;
   background: #C29AE5;
-  box-shadow: 0px 0px 100px 10px #927D9C;   /* drops shadow on it's upper division i.e, "div.image" */
+  box-shadow: 0px 0px 50px 0px #432c58;   /* drops shadow on it's upper division i.e, "div.image" */
 }
 section{          /* applied for bio.html */
   margin: 100px 0 0 0;
