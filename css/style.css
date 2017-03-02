@@ -9,10 +9,10 @@ body{ /* css for body */
 div{
 
 }
+
 header{ /*header css*/
   background: #412e52;
   width: 100%;
-  height: 100px;
   position: fixed;      /* fix the header on it's original position even if the screen is scrolled */
   display: flex;
   justify-content: flex-end;    /* align all felx-items on right side */
@@ -23,21 +23,20 @@ header{ /*header css*/
 
 div.banner{   /* properties for div.banner */
   background: ;
-  height: 100px;
+  height: ;
   width: 50%;
   display: flex;
   align-items: flex-end; /* align div.banner items at bottom of "div" */
 }
 nav{
   background: ;
+  height: 100px;
   width: 50%;
   display: flex;
   justify-content: flex-end;        /* nav content align on right */
   color: #BB96CC;
-  height: 100px;
 }
 ul{
-  height: 100%;
   margin: 0px;
   display: flex;
   flex-direction: row;      /* display ul items in row i.e, the <li> elements */
@@ -46,7 +45,7 @@ ul{
 
 }
 li{
-  height: 90px;
+  height: 90%;
   background:  ;
   padding: 0px 20px 10px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
   display: flex;
@@ -57,7 +56,7 @@ li{
 li:hover{   /* hover property. apply the following property when mouse pointer is hover above the <li> element */
   color: white;
   background: #9979A8;
-  height: 87px;     /* gives animation of nav element i.e, move little up while hover */
+  height: 87%;     /* gives animation of nav element i.e, move little up while hover */
   background: linear-gradient(#412e52, #583973);
   box-shadow: 0px 2px #f2e1fb;
 }
@@ -89,24 +88,106 @@ main{
                                 then "main" would go behind the "div.image" */
   z-index: 1;
   position: ;
-  height: 700px;
   width: 100%;
   background: #C29AE5;
   box-shadow: 0px 0px 50px 0px #432c58;   /* drops shadow on it's upper division i.e, "div.image" */
+}
+div.bio{
+  height: 700px;
+}
+div.main{
+  height: 700px;
 }
 section{          /* applied for bio.html */
   margin: 100px 0 0 0;
   z-index: 1;
   position: ;
-  height: 700px;
   width: 100%;
   background: #C29AE5;
   box-shadow: 0px 0px 100px 10px #927D9C;   /* drops shadow on it's upper division i.e, "div.image" */
 }
 footer{
-  height: 350px;
   background: #231529;
   z-index: 2;
   box-shadow: 0px 0px 40px 10px #3E244A;   /* drops shadow on "main" */
+}
+div.footer{
+  height: 350px;
+}
 
+@media(max-width: 800px){   /* apply the following css values for the brower with width 800px and below */
+  body{
+
+  }
+  header{ /*header css*/
+    background: #412e52;
+    width: 100%;
+    height: 150px;
+    position: static;      /* changes the header fixed position */
+    display: flex;
+    flex-direction: row;      /* arrange header components in single row */
+    box-shadow: 1px 3px 20px #845699;   /* drops shadow on div.image */
+  }
+
+  div.image{
+    margin: 0px;    /* header fixed position is removed so margin no needed */
+    position: static;     /* changes fixed position */
+  }
+  main{
+    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
+  }
+  div.main{
+
+  }
+  section{
+    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
+  }
+  div.bio{
+  }
+  div.banner{   /* properties for div.banner */
+    background:  ;
+    width: 15%;
+    background: ;
+    display: flex;
+    align-items: flex-end; /* align div.banner items at bottom of "div" */
+  }
+  h1{
+    margin: px;
+    padding: 30px 0px 10px 10px;
+  }
+
+  nav{
+    height: 100%;
+    background: ;
+    margin: 0px 0px 0px 0px;
+    width: 85%;
+    display: flex;
+    justify-content: center ;        /* nav content align on right */
+    align-items: flex-end;           /* position nav component's at bottom */
+    color: #BB96CC;                  /* nav component's text color */
+  }
+  ul{
+    margin: 0px 0px 10px 0px;       /* margin at bottom */
+    display: flex;
+    flex-direction: row;      /* display ul items in row i.e, the <li> elements */
+    padding: 0px;
+    list-style-type: none;    /* removes the list style */
+  }
+
+  li{
+    background: ;
+    padding: 0px 20px 0px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
+    display: flex;
+    align-items: flex-end;        /* put the <li> element at bottom of total height */
+    height: 35px;                 /* set <li> height to 35px */
+  }
+
+ li:hover{   /* hover property. apply the following property when mouse pointer is hover above the <li> element */
+    color: white;             /* sets text color to white on hover */
+    height: 35px;
+    background: #9979A8;      /* apply background on hover */
+    box-shadow: 0px 0px #f2e1fb;
+    align-items: center;
+    border-radius: 0px 5px;     /* background have curve edges */
+  }
 }
