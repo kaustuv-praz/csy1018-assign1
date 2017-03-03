@@ -1,3 +1,8 @@
+/*
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+*/
+
 body{ /* css for body */
   background: ;
   margin: 0;
@@ -19,14 +24,52 @@ header{ /*header css*/
   box-shadow: 1px 3px 20px #845699;   /* drops shadow on div.image */
   z-index: 3;       /* makes header always on top of other containers */
 }
+h2{
+  margin: 0px 10px 10px 0px;
+  background: ;
+  color: #BB96CC;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+h2:hover{
+  color: white;
+}
 
-
-div.banner{   /* properties for div.banner */
+div.logo{   /* properties for div.banner */
   background: ;
   height: ;
   width: 50%;
   display: flex;
-  align-items: flex-end; /* align div.banner items at bottom of "div" */
+  align-items: baseline; /* align div.banner items at bottom of "div" */
+  margin: 10px 0px 0px 15px;
+}
+div.logo:hover{
+}
+
+img.initial{
+  width: 100px;
+  height: 70px;
+  position: fixed;
+  opacity: 0.91;
+}
+img.hover{
+  width: 100px;
+  height: 70px;
+  opacity: ;
+}
+
+img.initial:hover{
+  opacity: 0.5;
+  background: ;
+}
+a{
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #BB96CC;
+}
+a:visited a:active{
+  text-decoration: none;
+  color: #BB96CC;
 }
 nav{
   background: ;
@@ -77,10 +120,11 @@ div.image{
   margin: 100px 0 0 0;      /* header use "fixed position" so to overcome the cons, if this margin is not use
                                 then div.image would go behind the header */
   width: 100%;
-  background: #6c488d;
+  background: ;
   height: 450px;
   position:   fixed;      /* position is fixed same as header */
   z-index: ;
+  background-image: url(../images/);
 }
 
 main{
@@ -90,9 +134,9 @@ main{
   position: ;
   width: 100%;
   background: #C29AE5;
-  box-shadow: 0px 0px 50px 0px #432c58;   /* drops shadow on it's upper division i.e, "div.image" */
+  box-shadow: 0px 0px 10px 0px #432c58;   /* drops shadow on it's upper division i.e, "div.image" */
 }
-div.bio{
+div.division{
   height: 700px;
 }
 div.main{
@@ -115,7 +159,7 @@ div.footer{
   height: 350px;
 }
 
-@media(max-width: 800px){   /* apply the following css values for the brower with width 800px and below */
+@media only screen and (max-width: 768px){   /* apply the following css values for the brower with width 800px and below */
   body{
 
   }
@@ -125,42 +169,41 @@ div.footer{
     height: 150px;
     position: static;      /* changes the header fixed position */
     display: flex;
-    flex-direction: row;      /* arrange header components in single row */
+    flex-direction: column;      /* arrange header components in single row */
     box-shadow: 1px 3px 20px #845699;   /* drops shadow on div.image */
   }
 
-  div.image{
-    margin: 0px;    /* header fixed position is removed so margin no needed */
-    position: static;     /* changes fixed position */
-  }
-  main{
-    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
-  }
-  div.main{
-
-  }
-  section{
-    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
-  }
-  div.bio{
-  }
-  div.banner{   /* properties for div.banner */
+  div.logo{
+    height: 100%;
     background:  ;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+    margin: 20px 0px 0px 0px;
+    color: #BB96CC;
+  }
+
+  img.initial{
+    opacity: 0;
+  }
+  img.initial:hover{
+    opacity: 0;
+  }
+  img.hover{
+    position: static;
+  }
+
+  div.banner{   /* properties for div.banner */
+    background: orange;
     width: 15%;
-    background: ;
     display: flex;
     align-items: flex-end; /* align div.banner items at bottom of "div" */
   }
-  h1{
-    margin: px;
-    padding: 30px 0px 10px 10px;
-  }
-
   nav{
-    height: 100%;
+    height: 50%;
     background: ;
     margin: 0px 0px 0px 0px;
-    width: 85%;
+    width: 100%;
     display: flex;
     justify-content: center ;        /* nav content align on right */
     align-items: flex-end;           /* position nav component's at bottom */
@@ -190,4 +233,26 @@ div.footer{
     align-items: center;
     border-radius: 0px 5px;     /* background have curve edges */
   }
+
+  div.image{
+    margin: 0px;    /* header fixed position is removed so margin no needed */
+    position: static;     /* changes fixed position */
+  }
+  main{
+    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
+  }
+  div.main{
+
+  }
+  section{
+    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
+  }
+  div.division{
+  }
+
+  h1{
+    margin: px;
+    padding: 30px 0px 10px 10px;
+  }
+
 }
