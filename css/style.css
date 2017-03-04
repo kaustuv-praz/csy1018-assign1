@@ -116,17 +116,90 @@ h1:hover{     /* hover property. apply the following property when mouse pointer
   margin: 0px 0px 3px 0px;
 }
 
-div.image{
+section.index{
+  width: 100%;
   margin: 100px 0 0 0;      /* header use "fixed position" so to overcome the cons, if this margin is not use
                                 then div.image would go behind the header */
-  width: 100%;
-  background: ;
-  height: 450px;
-  position:   fixed;      /* position is fixed same as header */
-  z-index: ;
-  background-image: url(../images/);
+  position: fixed;      /* position is fixed same as header */
+  background: white;
+  display: flex;
+  flex-direction: row;
+
 }
 
+div.image{
+  background: #765196;
+  width: 50%;
+  background: ;
+  height: 100%;
+  background-image: url(../images/);
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+  justify-content: center;
+  padding: 90px 0px 100px 0px;
+}
+div.opa1, div.opa2{
+  background-image: url(../images/opa.png);
+  margin: 10px 0px 10px 20px;
+}
+
+div.opa1{
+  width: 70%;
+}
+div.opa2{
+  width: 80%;
+}
+.opa1:hover, .opa2:hover{
+}
+h3,h4{
+  width: 90%%;
+  color: #BB96CC;
+  margin: 20px 0px 20px 20px;
+}
+
+h3{
+  font-size: 30px;
+}
+h4{
+  font-size: 20px;
+}
+h3:hover, h4:hover{
+  margin: 2px 2px 2px 20px;
+  height: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/opa01.png);
+}
+h4:hover{
+  height: 59px;
+}
+aside.profile{
+  background: green;
+  width: 50%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+img.dp{
+  background: white;
+  height: 100%;
+  width: 50%;
+}
+article.info{
+  height: 100%;
+  background: tomato;
+  width: 50%;
+}
+
+article.info ul{
+  display: flex;
+  flex-direction: column;
+
+}
 main{
   margin: 450px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
                                 then "main" would go behind the "div.image" */
@@ -178,7 +251,7 @@ div.footer{
     background:  ;
     width: 100%;
     justify-content: center;
-    align-items: baseline;
+    align-items: baseline;      /* arrange "div.logo" items vertically in baseline form */
     margin: 20px 0px 0px 0px;
     color: #BB96CC;
   }
@@ -234,10 +307,22 @@ div.footer{
     border-radius: 0px 5px;     /* background have curve edges */
   }
 
-  div.image{
+  section.index{
     margin: 0px;    /* header fixed position is removed so margin no needed */
     position: static;     /* changes fixed position */
+    flex-direction: column;
   }
+
+  div.image{
+    width: 100%;
+    height: 140px;
+  }
+
+  aside.profile{
+    width: 100%;
+
+  }
+
   main{
     margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
   }
