@@ -121,7 +121,6 @@ section.index{
   margin: 100px 0 0 0;      /* header use "fixed position" so to overcome the cons, if this margin is not use
                                 then div.image would go behind the header */
   position: fixed;      /* position is fixed same as header */
-  background: white;
   display: flex;
   flex-direction: row;
 
@@ -137,7 +136,7 @@ div.image{
   flex-direction: column;
   align-items: ;
   justify-content: center;
-  padding: 90px 0px 100px 0px;
+  padding: 90px 0px 82px 0px;
 }
 div.opa1, div.opa2{
   background-image: url(../images/opa.png);
@@ -155,7 +154,8 @@ div.opa2{
 h3,h4{
   width: 90%%;
   color: #BB96CC;
-  margin: 20px 0px 20px 20px;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 0px 0px 15px;
 }
 
 h3{
@@ -165,7 +165,7 @@ h4{
   font-size: 20px;
 }
 h3:hover, h4:hover{
-  margin: 2px 2px 2px 20px;
+  margin: 2px 2px 2px 0px;
   height: 70px;
   color: white;
   display: flex;
@@ -175,30 +175,57 @@ h3:hover, h4:hover{
 h4:hover{
   height: 59px;
 }
+
 aside.profile{
-  background: green;
+  background: #765196;
   width: 50%;
-  height: 450px;
+  height: px;
   display: flex;
   flex-direction: row;
 }
 
+div.profile_left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 img.dp{
-  background: white;
-  height: 100%;
-  width: 50%;
+  background: #765196;
+  height: 80%;
+  width: 80%;
+  border-radius: 200px 250px;
+  border: 10px solid #412e52;
 }
 article.info{
   height: 100%;
-  background: tomato;
+  background: #765196;
   width: 50%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
 }
 
 article.info ul{
+  background: ;
+  width: 98%;
   display: flex;
   flex-direction: column;
+  margin: 16px 0px 0px 0px;
 
+}
+article.info li{
+  margin: 0px 0px 0px 0px;
+  font-size: 15px;
+  padding: 19px 0px 19px 0px;
+  justify-content: center;
+  color: #BB96CC;
+}
+
+article.info li:hover{
+  box-shadow: none;
+  background-image: url(../images/opa.png);
 }
 main{
   margin: 450px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
