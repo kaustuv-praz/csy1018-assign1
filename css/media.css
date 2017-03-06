@@ -1,0 +1,201 @@
+@media only screen and (max-width: 768px){   /* apply the following css values for the brower with width 800px and below */
+
+  body{
+
+  }
+  header{ /*header css*/
+    background: #412e52;
+    width: 100%;
+    height: 150px;
+    position: static;      /* changes the header fixed position */
+    display: flex;
+    flex-direction: column;      /* arrange header components in single row */
+    box-shadow: 1px 3px 20px #845699;   /* drops shadow on div.image */
+  }
+
+  div.logo{
+    height: 100%;
+    background:  ;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;      /* arrange "div.logo" items vertically in baseline form */
+    margin: 20px 0px 0px 0px;
+    color: #BB96CC;
+  }
+ img.initial{
+    opacity: 0;
+  }
+
+ img.initial:hover{
+    opacity: 0;
+  }
+  img.hover{
+    position: static;
+  }
+
+  nav{
+    height: 50%;
+    background: ;
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center ;        /* nav content align on right */
+    align-items: flex-end;           /* position nav component's at bottom */
+    color: #BB96CC;                  /* nav component's text color */
+  }
+  ul{
+    margin: 0px 0px 0px 0px;       /* margin at bottom */
+    display: flex;
+    flex-direction: row;      /* display ul items in row i.e, the <li> elements */
+    padding: 0px;
+    list-style-type: none;    /* removes the list style */
+  }
+
+  nav li{
+    background: ;
+    padding: 0px 20px 0px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
+    display: flex;
+    align-items: flex-end;        /* put the <li> element at bottom of total height */
+    height: 80%;
+  }
+
+  nav li:hover{   /* hover property. apply the following property when mouse pointer is hover above the <li> element */
+    color: white;             /* sets text color to white on hover */
+    margin: 5px 0px 0px 0px;
+    height: 80%;
+    background: #9979A8;      /* apply background on hover */
+    box-shadow: 0px 0px #f2e1fb;
+    border-radius: 0px 5px;     /* background have curve edges */
+  }
+
+  section.index{
+    margin: 0px;    /* header fixed position is removed so margin no needed */
+    position: static;     /* changes fixed position */
+    flex-direction: column;
+  }
+
+  div.image{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0px;
+  }
+
+  section div.vr{
+    margin: 0px 0px 20px 20px;
+    height: 1px;
+    background: #9170AF;
+    width: 90%;
+
+  }
+
+  aside.profile{
+    margin: 0px;
+    width: 100%;
+  }
+
+  div.profile_left{
+
+  }
+
+  section img.dp{
+
+  }
+  section img.dp:hover{
+
+  }
+
+  article.info{
+
+  }
+
+  article.info ul{
+    background: ;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 10px 35px;
+
+  }
+  article.info li{
+    margin: 0px 0px 0px 0px;
+    font-size: 15px;
+    padding: 15px 0px 15px 0px;
+    justify-content: center;
+    color: #BB96CC;
+  }
+
+  article.info li:hover{
+    box-shadow: none;
+    color: white;
+    background: linear-gradient(to right, #69428B, #5A426F);
+  }
+
+  main{
+    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
+  }
+  div.main{
+
+  }
+  section{
+    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
+  }
+  div.division{
+  }
+
+  h1{
+    margin: px;
+    padding: 30px 0px 10px 10px;
+  }
+
+
+
+
+  /* footer css */
+  footer{
+
+  }
+
+  footer div.connect{
+    margin: 5px 0px 0px 20px;
+    width: 40%;
+  }
+  footer h2{
+    font-size: 18px;
+  }
+
+  footer div.connect ul {
+
+  }
+
+
+  footer div.connect ul li{
+    padding: 9px 0px 9px 0px;
+    margin: 0px;
+    font-size: 14px;
+  }
+  footer div.connect ul li:hover{
+
+  }
+
+  footer div.connect img {
+    height: 20px;
+    width: 20px;
+  }
+
+  footer div.connect .text{
+
+  }
+
+  div.footer{
+    width: 70%;
+    height: 260px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  div.footer h2{
+    background: ;
+    font-size: 10px;
+    margin: 0px 20px 20px 0px;
+  }
+}

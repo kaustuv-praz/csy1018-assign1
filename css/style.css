@@ -24,10 +24,11 @@ header{ /*header css*/
   box-shadow: 1px 3px 20px #845699;   /* drops shadow on div.image */
   z-index: 3;       /* makes header always on top of other containers */
 }
-h2{
-  margin: 0px 10px 10px 0px;
-  background: ;
+h2 {
   color: #BB96CC;
+}
+header h2{
+  margin: 0px 10px 10px 0px;
   font-family: sans-serif;
   font-size: 15px;
 }
@@ -46,19 +47,19 @@ div.logo{   /* properties for div.banner */
 div.logo:hover{
 }
 
-img.initial{
+ img.initial{
   width: 100px;
   height: 70px;
   position: fixed;
   opacity: 0.91;
 }
-img.hover{
+ img.hover{
   width: 100px;
   height: 70px;
   opacity: ;
 }
 
-img.initial:hover{
+ img.initial:hover{
   opacity: 0.5;
   background: ;
 }
@@ -80,14 +81,17 @@ nav{
   color: #BB96CC;
 }
 ul{
+  list-style-type: none;    /* removes the list style */
+
+}
+nav ul{
   margin: 0px;
   display: flex;
   flex-direction: row;      /* display ul items in row i.e, the <li> elements */
   padding: 0px;
-  list-style-type: none;    /* removes the list style */
 
 }
-li{
+nav ul li{
   height: 90%;
   background:  ;
   padding: 0px 20px 10px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
@@ -123,12 +127,11 @@ section.index{
   position: fixed;      /* position is fixed same as header */
   display: flex;
   flex-direction: row;
-
+  background: #69428B;
 }
 
 div.image{
-  background: #765196;
-  width: 50%;
+  width: 47%;
   background: ;
   height: 100%;
   background-image: url(../images/);
@@ -151,20 +154,20 @@ div.opa2{
 }
 .opa1:hover, .opa2:hover{
 }
-h3,h4{
+section h3,h4{
   width: 90%%;
   color: #BB96CC;
   margin: 20px 0px 20px 0px;
   padding: 0px 0px 0px 15px;
 }
 
-h3{
+section h3{
   font-size: 30px;
 }
-h4{
+section h4{
   font-size: 20px;
 }
-h3:hover, h4:hover{
+section h3:hover, h4:hover{
   margin: 2px 2px 2px 0px;
   height: 70px;
   color: white;
@@ -176,8 +179,17 @@ h4:hover{
   height: 59px;
 }
 
+section div.vr{
+  margin: 30px 0px 0px 0px;
+  width: 1px;
+  height: 300px;
+  background: #9170AF;
+}
+div.padding{
+  width: 3%;
+}
+
 aside.profile{
-  background: #765196;
   width: 50%;
   height: px;
   display: flex;
@@ -191,16 +203,20 @@ div.profile_left{
   align-items: center;
 }
 
-img.dp{
-  background: #765196;
+section img.dp{
   height: 80%;
-  width: 80%;
-  border-radius: 200px 250px;
+  width: 75%;
+  border-radius: 232px 231px;
+  border: 10px solid #412e52;
+}
+section img.dp:hover{
+  height: 60%;
+  height: 60%;
+  border-radius: 49%;
   border: 10px solid #412e52;
 }
 article.info{
   height: 100%;
-  background: #765196;
   width: 50%;
   display: flex;
   align-items: baseline;
@@ -212,20 +228,21 @@ article.info ul{
   width: 98%;
   display: flex;
   flex-direction: column;
-  margin: 16px 0px 0px 0px;
+  margin: 19px 0px 0px 0px;
 
 }
 article.info li{
   margin: 0px 0px 0px 0px;
   font-size: 15px;
-  padding: 19px 0px 19px 0px;
+  padding: 18px 0px 17px 0px;
   justify-content: center;
   color: #BB96CC;
 }
 
 article.info li:hover{
   box-shadow: none;
-  background-image: url(../images/opa.png);
+  color: white;
+  background: linear-gradient(to right, #69428B, #5A426F);
 }
 main{
   margin: 450px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
@@ -245,7 +262,6 @@ div.main{
 section{          /* applied for bio.html */
   margin: 100px 0 0 0;
   z-index: 1;
-  position: ;
   width: 100%;
   background: #C29AE5;
   box-shadow: 0px 0px 100px 10px #927D9C;   /* drops shadow on it's upper division i.e, "div.image" */
@@ -254,117 +270,60 @@ footer{
   background: #231529;
   z-index: 2;
   box-shadow: 0px 0px 40px 10px #3E244A;   /* drops shadow on "main" */
+  display: flex;
+  flex-direction: row;
+}
+
+footer div.connect{
+  margin: 20px 0px 0px 30px;
+  width: 40%;
+}
+footer h2{
+  font-size: 20px;
+}
+
+footer div.connect ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer div.connect ul li{
+  padding: 10px 0px 10px 0px;
+  margin: 1px;
+  color: #BB96CC;
+  background: ;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+}
+footer div.connect ul li:hover{
+  padding: 10px 0px 10px 0px;
+  background: none;
+  box-shadow: none;
+  color: white;
+  opacity: 0.9;
+}
+
+footer div.connect img {
+  height: 25px;
+  width: 25px;
+  margin: 0px 20px 0px 0px;
+}
+
+footer div.connect .text{
+  display: flex;
+  align-items: center;
 }
 div.footer{
+  width: 70%;
   height: 350px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
-
-@media only screen and (max-width: 768px){   /* apply the following css values for the brower with width 800px and below */
-  body{
-
-  }
-  header{ /*header css*/
-    background: #412e52;
-    width: 100%;
-    height: 150px;
-    position: static;      /* changes the header fixed position */
-    display: flex;
-    flex-direction: column;      /* arrange header components in single row */
-    box-shadow: 1px 3px 20px #845699;   /* drops shadow on div.image */
-  }
-
-  div.logo{
-    height: 100%;
-    background:  ;
-    width: 100%;
-    justify-content: center;
-    align-items: baseline;      /* arrange "div.logo" items vertically in baseline form */
-    margin: 20px 0px 0px 0px;
-    color: #BB96CC;
-  }
-
-  img.initial{
-    opacity: 0;
-  }
-  img.initial:hover{
-    opacity: 0;
-  }
-  img.hover{
-    position: static;
-  }
-
-  div.banner{   /* properties for div.banner */
-    background: orange;
-    width: 15%;
-    display: flex;
-    align-items: flex-end; /* align div.banner items at bottom of "div" */
-  }
-  nav{
-    height: 50%;
-    background: ;
-    margin: 0px 0px 0px 0px;
-    width: 100%;
-    display: flex;
-    justify-content: center ;        /* nav content align on right */
-    align-items: flex-end;           /* position nav component's at bottom */
-    color: #BB96CC;                  /* nav component's text color */
-  }
-  ul{
-    margin: 0px 0px 10px 0px;       /* margin at bottom */
-    display: flex;
-    flex-direction: row;      /* display ul items in row i.e, the <li> elements */
-    padding: 0px;
-    list-style-type: none;    /* removes the list style */
-  }
-
-  li{
-    background: ;
-    padding: 0px 20px 0px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
-    display: flex;
-    align-items: flex-end;        /* put the <li> element at bottom of total height */
-    height: 35px;                 /* set <li> height to 35px */
-  }
-
- li:hover{   /* hover property. apply the following property when mouse pointer is hover above the <li> element */
-    color: white;             /* sets text color to white on hover */
-    height: 35px;
-    background: #9979A8;      /* apply background on hover */
-    box-shadow: 0px 0px #f2e1fb;
-    align-items: center;
-    border-radius: 0px 5px;     /* background have curve edges */
-  }
-
-  section.index{
-    margin: 0px;    /* header fixed position is removed so margin no needed */
-    position: static;     /* changes fixed position */
-    flex-direction: column;
-  }
-
-  div.image{
-    width: 100%;
-    height: 140px;
-  }
-
-  aside.profile{
-    width: 100%;
-
-  }
-
-  main{
-    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
-  }
-  div.main{
-
-  }
-  section{
-    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
-  }
-  div.division{
-  }
-
-  h1{
-    margin: px;
-    padding: 30px 0px 10px 10px;
-  }
-
+div.footer h2{
+  background: ;
+  font-size: 10px;
+  margin: 0px 20px 20px 0px;
 }
