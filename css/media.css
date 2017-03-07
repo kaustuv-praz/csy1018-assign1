@@ -1,3 +1,7 @@
+/*
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+*/
 @media only screen and (max-width: 768px){   /* apply the following css values for the brower with width 800px and below */
 
   body{
@@ -10,7 +14,7 @@
     position: static;      /* changes the header fixed position */
     display: flex;
     flex-direction: column;      /* arrange header components in single row */
-    box-shadow: 1px 3px 20px #845699;   /* drops shadow on div.image */
+    box-shadow: 1px 1px 0px #845699;   /* drops shadow on div.image */
   }
 
   div.logo{
@@ -24,13 +28,22 @@
   }
  img.initial{
     opacity: 0;
+    position: fixed;
+    animation-name: del;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes del {
+    0%{opacity: 0;}
+    100%{opacity: 0;}
   }
 
  img.initial:hover{
-    opacity: 0;
+
   }
   img.hover{
     position: static;
+
   }
 
   nav{
@@ -127,7 +140,7 @@
   article.info li:hover{
     box-shadow: none;
     color: white;
-    background: linear-gradient(to right, #69428B, #5A426F);
+    background: linear-gradient(to right, #17111d, #2C2037);
   }
 
   main{

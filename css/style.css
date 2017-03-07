@@ -21,11 +21,12 @@ header{ /*header css*/
   position: fixed;      /* fix the header on it's original position even if the screen is scrolled */
   display: flex;
   justify-content: flex-end;    /* align all felx-items on right side */
-  box-shadow: 1px 3px 20px #845699;   /* drops shadow on div.image */
+  box-shadow: 1px 1px 3px #845699;   /* drops shadow on div.image */
   z-index: 3;       /* makes header always on top of other containers */
 }
 h2 {
   color: #BB96CC;
+  transition: color 1s;
 }
 header h2{
   margin: 0px 10px 10px 0px;
@@ -47,22 +48,40 @@ div.logo{   /* properties for div.banner */
 div.logo:hover{
 }
 
- img.initial{
+img.initial{
   width: 100px;
   height: 70px;
   position: fixed;
   opacity: 0.91;
+  animation-name: opacity;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
- img.hover{
+
+@keyframes opacity {
+  0%{opacity: 0.5}
+  10%{opacity: 0.8}
+  20%{opacity: 0.6}
+  30%{opacity: 0.4}
+  40%{opacity: 0.2}
+  50%{opacity: 0.0}
+  60%{opacity: 0.2}
+  70%{opacity: 0.4}
+  80%{opacity: 0.6}
+  90%{opacity: 0.8}
+  100%{opacity: 1}
+}
+
+img.hover{
   width: 100px;
   height: 70px;
   opacity: ;
 }
 
- img.initial:hover{
+/* img.initial:hover{
   opacity: 0.5;
   background: ;
-}
+} */
 a{
   font-family: sans-serif;
   text-decoration: none;
@@ -97,7 +116,7 @@ nav ul li{
   padding: 0px 20px 10px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
   display: flex;
   align-items: flex-end;        /* put the <li> element at bottom of total height */
-
+  transition: height 0.2s;
 }
 
 li:hover{   /* hover property. apply the following property when mouse pointer is hover above the <li> element */
@@ -120,130 +139,6 @@ h1:hover{     /* hover property. apply the following property when mouse pointer
   margin: 0px 0px 3px 0px;
 }
 
-section.index{
-  width: 100%;
-  margin: 100px 0 0 0;      /* header use "fixed position" so to overcome the cons, if this margin is not use
-                                then div.image would go behind the header */
-  position: fixed;      /* position is fixed same as header */
-  display: flex;
-  flex-direction: row;
-  background: #69428B;
-}
-
-div.image{
-  width: 47%;
-  background: ;
-  height: 100%;
-  background-image: url(../images/);
-  display: flex;
-  flex-direction: column;
-  align-items: ;
-  justify-content: center;
-  padding: 90px 0px 82px 0px;
-}
-div.opa1, div.opa2{
-  background-image: url(../images/opa.png);
-  margin: 10px 0px 10px 20px;
-}
-
-div.opa1{
-  width: 70%;
-}
-div.opa2{
-  width: 80%;
-}
-.opa1:hover, .opa2:hover{
-}
-section h3,h4{
-  width: 90%%;
-  color: #BB96CC;
-  margin: 20px 0px 20px 0px;
-  padding: 0px 0px 0px 15px;
-}
-
-section h3{
-  font-size: 30px;
-}
-section h4{
-  font-size: 20px;
-}
-section h3:hover, h4:hover{
-  margin: 2px 2px 2px 0px;
-  height: 70px;
-  color: white;
-  display: flex;
-  align-items: center;
-  background-image: url(../images/opa01.png);
-}
-h4:hover{
-  height: 59px;
-}
-
-section div.vr{
-  margin: 30px 0px 0px 0px;
-  width: 1px;
-  height: 300px;
-  background: #9170AF;
-}
-div.padding{
-  width: 3%;
-}
-
-aside.profile{
-  width: 50%;
-  height: px;
-  display: flex;
-  flex-direction: row;
-}
-
-div.profile_left{
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section img.dp{
-  height: 80%;
-  width: 75%;
-  border-radius: 232px 231px;
-  border: 10px solid #412e52;
-}
-section img.dp:hover{
-  height: 60%;
-  height: 60%;
-  border-radius: 49%;
-  border: 10px solid #412e52;
-}
-article.info{
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-}
-
-article.info ul{
-  background: ;
-  width: 98%;
-  display: flex;
-  flex-direction: column;
-  margin: 19px 0px 0px 0px;
-
-}
-article.info li{
-  margin: 0px 0px 0px 0px;
-  font-size: 15px;
-  padding: 18px 0px 17px 0px;
-  justify-content: center;
-  color: #BB96CC;
-}
-
-article.info li:hover{
-  box-shadow: none;
-  color: white;
-  background: linear-gradient(to right, #69428B, #5A426F);
-}
 main{
   margin: 450px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
                                 then "main" would go behind the "div.image" */
@@ -271,34 +166,45 @@ footer{
   z-index: 2;
   box-shadow: 0px 0px 40px 10px #3E244A;   /* drops shadow on "main" */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
 }
 
 footer div.connect{
-  margin: 20px 0px 0px 30px;
-  width: 40%;
+  margin: 50px 0px 60px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer h2{
   font-size: 20px;
 }
+footer div.connect h2{
+  padding: 0px 0px 0px 0px;
+  margin: 20px;
+}
+
 
 footer div.connect ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 
 footer div.connect ul li{
-  padding: 10px 0px 10px 0px;
-  margin: 1px;
+  padding: 5px 0px 10px 0px;
+  margin: 0px 30px 0px 10px;
   color: #BB96CC;
   background: ;
   display: flex;
   flex-direction: row;
   font-size: 16px;
+  transition: color 0.5s, opacity 1s;
 }
 footer div.connect ul li:hover{
-  padding: 10px 0px 10px 0px;
+  margin: ;
+  padding: 0px;
   background: none;
   box-shadow: none;
   color: white;
@@ -308,7 +214,7 @@ footer div.connect ul li:hover{
 footer div.connect img {
   height: 25px;
   width: 25px;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 15px 0px 0px;
 }
 
 footer div.connect .text{
@@ -316,14 +222,13 @@ footer div.connect .text{
   align-items: center;
 }
 div.footer{
-  width: 70%;
-  height: 350px;
+  width: 100%;
+  height: ;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
 }
 div.footer h2{
-  background: ;
   font-size: 10px;
-  margin: 0px 20px 20px 0px;
+  margin: 50px 0px 30px 0px;
+  padding: 0px;
 }

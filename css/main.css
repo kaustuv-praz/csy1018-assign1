@@ -1,2 +1,7 @@
-@import "style.css";
+/*
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+*/
+@import "style.css" screen;
+@import "index.css" screen;
 @import "media.css" screen;
