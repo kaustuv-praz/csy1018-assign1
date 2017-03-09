@@ -2,6 +2,10 @@
   name: Kaustuv Prajapati
   UN-ID: 17421493
 */
-@import "style.css" screen;
-@import "index.css" screen;
-@import "media.css" screen;
+
+/* this css is added to all the html files, this css file contains links to all other css codes
+  this is done for efficient and better view of specified css codes.
+ */
+@import "style.css" screen;     /* contains all html files layout css code */
+@import "index.css" screen;     /* contains index.html files css code of specific element of index file */
+@import "media.css" screen;     /* TABLET Device view. Contains css code for 768px and below screens */

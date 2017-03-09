@@ -2,29 +2,32 @@
   name: Kaustuv Prajapati
   UN-ID: 17421493
 */
-@media only screen and (max-width: 768px){   /* apply the following css values for the brower with width 800px and below */
+@media only screen and (max-width: 768px){   /* apply the following css values for the screen width 768px and below */
 
-  body{
+  body{ /* html body css */
+    margin: 0px;
+    padding: 0px;
+  } /* body css ends */
 
-  }
-  header{ /*header css*/
-    background: #412e52;
-    width: 100%;
-    height: 150px;
+
+  /*header css starts*/
+  header{
+    background-color: #412e52;    /* set the header background color to given value */
+    width: 100%;            /* set header width to 100% covering the full screen width of the browser */
+    height: 150px;          /* fixed the height of header */
     position: static;      /* changes the header fixed position */
-    display: flex;
-    flex-direction: column;      /* arrange header components in single row */
+    display: flex;          /* set the container display type to flex */
+    flex-direction: column;      /* arrange header components in single column */
     box-shadow: 1px 1px 0px #845699;   /* drops shadow on div.image */
   }
 
   div.logo{
     height: 100%;
-    background:  ;
     width: 100%;
-    justify-content: center;
+    justify-content: center;    /* align "div.logo" contents to center of total width occupied by "div.logo" */
     align-items: baseline;      /* arrange "div.logo" items vertically in baseline form */
-    margin: 20px 0px 0px 0px;
-    color: #BB96CC;
+    margin: 20px 0px 0px 0px;   /* margin 20px on top so that it don't seems to be attached */
+    color: #BB96CC;     /* all the text's color within this div will be set */
   }
  img.initial{
     opacity: 0;
@@ -169,46 +172,68 @@
   }
 
   footer div.connect{
-    margin: 5px 0px 0px 20px;
-    width: 40%;
+    margin: 50px 0px 60px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   footer h2{
-    font-size: 18px;
+    font-size: 20px;
+  }
+  footer div.connect h2{
+    padding: 0px 0px 0px 0px;
+    margin: 20px;
   }
 
-  footer div.connect ul {
 
+  footer div.connect ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
 
 
   footer div.connect ul li{
-    padding: 9px 0px 9px 0px;
-    margin: 0px;
-    font-size: 14px;
+    padding: 5px 0px 10px 0px;
+    margin: 0px 5px 0px 15px;
+    color: #BB96CC;
+    background: ;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    transition: color 0.5s, opacity 1s;
   }
   footer div.connect ul li:hover{
-
+    margin: ;
+    padding: 0px;
+    background: none;
+    box-shadow: none;
+    color: white;
+    opacity: 0.9;
   }
 
   footer div.connect img {
     height: 20px;
     width: 20px;
+    margin: 0px 9px 0px 0px;
   }
 
   footer div.connect .text{
-
-  }
-
-  div.footer{
-    width: 70%;
-    height: 260px;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+  }
+  div.footer{
+    width: 100%;
+    height: ;
+    display: flex;
+    justify-content: center;
   }
   div.footer h2{
-    background: ;
     font-size: 10px;
-    margin: 0px 20px 20px 0px;
+    margin: 50px 0px 30px 0px;
+    padding: 0px;
   }
-}

@@ -6,81 +6,93 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bio</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">      <!--  -->
+    <title>bio</title>    <!-- title that appears on the tab of browser -->
+    <link rel="stylesheet" href="css/main.css">     <!-- link the css file named "main.css" of CSS folder -->
   </head>
-  <body>
-    <header>
-      <div class="logo">    <!-- banner division on header -->
-        <img class="initial" src="images/logo.png" alt="image" />
-        <img class="hover" src="images/logo_hover.png" alt="image" />
-        <h2>kaustuv-praz</h2>
+  <body>    <!--body starts here-->
+    <header>    <!-- index file header that contains logo "div" and "nav" part-->
+                <!-- header part is divided into 2 part. the div.logo and "nav", both combined covers 100% width -->
+      <!-- logo div starts -->
+      <div class="logo">
+        <img class="initial" src="images/logo.png" alt="image" />     <!-- adding logo image -->
+        <img class="hover" src="images/logo_hover.png" alt="image" />     <!-- this image stay behind the "logo.png" for better animation view -->
+        <a href="http://kaustuv-praz.github.io/csy1018-assign1"> <h2>kaustuv-praz.github</h2> </a>  <!-- link to my github profile -->
       </div>
+      <!-- logo div ends -->
 
       <nav>   <!-- navigation part on header -->
         <ul>
-          <a href="index.html"> <li>Home</li> </a>
+          <!-- ul elements starts -->
+          <a href="index.html"><li>Home</li></a>
           <a href="bio.html"> <li>Bio</li> </a>
           <a href="cv.html"><li>CV</li></a>
           <a href="contact.html"> <li>Contact</li> </a>
         </ul>
       </nav>  <!-- navigation ends-->
-    </header>
+
+    </header>   <!-- header ends-->
+
     <section>     <!-- main section starts -->
       <div class="division">   <!-- division -->
 
       </div>
     </section>
-    <footer>    <!-- Footer part starts -->
-      <div class="connect">
+    <!-- main section ends -->
+
+    <!-- Footer part starts -->
+    <footer>
+      <!-- footer is divided in to 2 parts, div.connect & div.footer -->
+      <div class="connect">   <!-- this div contents some contact link to me -->
         <h2>Get Connect</h2>
-        <ul class="initial">
-          <a href="http://gmail.com">
+        <ul class="contact">    <!-- contact links are in list form -->
+          <a href="http://gmail.com">   <!-- below <li> is linked to my gmail address-->
             <li>
-              <img src="images/gmail.png" alt="g" />
+              <img src="images/gmail.png" alt="g" />    <!-- logo of gmail -->  <!-- reference form http://www.google.com -->
               <div class="text">
                 @gmail.com
               </div>
             </li>
           </a>
-          <a href="http://gmail.com">
+          <a href="http://www.facebook.com/">   <!-- below <li> is linked to my facebook profile-->
             <li>
-              <img src="images/facebook.png" alt="f" />
+              <img src="images/facebook.png" alt="f" />   <!-- logo of facebook --> <!-- reference form http://www.facebook.com -->
               <div class="text">
                 fb/kaustuv.praz
               </div>
             </li>
           </a>
-          <a href="http://gmail.com">
+          <a href="http://www.twitter.com/">    <!-- below <li> linked to my twitter account-->
             <li>
-              <img src="images/twitter.png" alt="t" />
+              <img src="images/twitter.png" alt="t" />  <!-- logo of twitter --> <!-- reference from http://www.twitter.com -->
               <div class="text">
                 @kaustuv_praz
               </div>
             </li>
           </a>
-          <a href="http://gmail.com">
+          <a href="http://www.google.com">  <!-- below <li> linked to my google+ profile -->
             <li>
-              <img src="images/google+.png" alt="g+" />
+              <img src="images/google+.png" alt="g+" />   <!-- logo of googel + --> <!-- reference form http://www.google.com -->
               <div class="text">
                 Google+
               </div>
             </li>
           </a>
-          <a href="http://gmail.com">
+          <a href="#">
             <li>
               <img src="images/cell.png" alt="cell" />
-              <div class="text">
+              <div class="text">    <!-- my cell number, viber number -->
                 +977 0000000000
               </div>
             </li>
           </a>
         </ul>
       </div>
-      <div class="footer">
+      <div class="footer">  <!-- contains main footer elements -->
         <h2>&copy; Kaustuv Prajapati</h2>
       </div>
     </footer>   <!-- footer part ends-->
-  </body>
+
+  </body>    <!-- body part ends-->
 </html>
+  <!-- end of index.html-->

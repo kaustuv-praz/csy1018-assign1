@@ -4,61 +4,78 @@
 */
 
 body{ /* css for body */
-  background: ;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
+  margin: 0;  /* 0px gap between body and screen border */
+  padding: 0;   /* 0px gap between body and it's contents */
+  font-family: sans-serif;    /* set font-style of whole document */
+  display: flex;        /* set the container display type to flex */
+  flex-direction: column;   /* arrange header components in single column */
 }
-div{
+/* body css ends */
+
+
+div{ /* css for div. Code for this will be applied to all div if not specific */
 
 }
 
 header{ /*header css*/
   background: #412e52;
   width: 100%;
+
   position: fixed;      /* fix the header on it's original position even if the screen is scrolled */
   display: flex;
   justify-content: flex-end;    /* align all felx-items on right side */
   box-shadow: 1px 1px 3px #845699;   /* drops shadow on div.image */
   z-index: 3;       /* makes header always on top of other containers */
-}
+  transition: height 2s;
+} /* header ends */
+
+/* css for all h2 elements */
 h2 {
   color: #BB96CC;
-  transition: color 1s;
-}
+  transition: color 1s;     /* changing from current color of text to specified text on hover in 1 second */
+}/* h2 css ends */
+
+
+/* css to h2 elements of header part */
 header h2{
   margin: 0px 10px 10px 0px;
   font-family: sans-serif;
-  font-size: 15px;
-}
-h2:hover{
-  color: white;
-}
+  font-size: 15px;      /* fix the font-size of all <h2> elements of header to set value */
+} /* header <h2> ends */
 
-div.logo{   /* properties for div.banner */
-  background: ;
-  height: ;
+
+
+/* when h2 is hovered */
+h2:hover{
+  color: white;   /* when h2 text is hovered the text color would change to white */
+}   /* h2 hover ends */
+
+
+/* properties for div.logo */
+div.logo{
   width: 50%;
   display: flex;
   align-items: baseline; /* align div.banner items at bottom of "div" */
-  margin: 10px 0px 0px 15px;
-}
-div.logo:hover{
-}
+  margin: 10px 0px 0px 15px;    /* top margin and right margin to logo for better alignment */
+} /* logo div property ends */
 
+/* logo div property when hovered */
+div.logo:hover{
+
+} /* logo hover ends */
+
+/* css for initial image, this images stays on top of the background logo image*/
 img.initial{
-  width: 100px;
+  width: 100px;         /* width and height of the image is fixed */
   height: 70px;
   position: fixed;
-  opacity: 0.91;
-  animation-name: opacity;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
+  animation-name: opacity;      /* animation is done to change opacity */
+  animation-duration: 6s;       /* complete animation duration time is set */
+  animation-iteration-count: infinite;    /* animation will be repeated for infinite number of times */
 }
 
-@keyframes opacity {
+@keyframes opacity {    /* animation properties */
+    /* in respect to the animation-duration time, the opacity value is changed */
   0%{opacity: 0.5}
   10%{opacity: 0.8}
   20%{opacity: 0.6}
@@ -71,139 +88,164 @@ img.initial{
   90%{opacity: 0.8}
   100%{opacity: 1}
 }
+/* end of css for initial image */
 
+/* css for back image/ hover image(named). Initially i planned to make effect on hover, but after learning the animation
+  i thought of applying animaiton on it */
 img.hover{
-  width: 100px;
+  width: 100px;   /* height and width if fixed same as the "image.initial", so that "initial.image" covers the img.hover when
+                    opacity is 1 */
   height: 70px;
-  opacity: ;
+}   /* image hover css ends */
+
+/* anchor css properties */
+a{
+  font-family: sans-serif;    /* font-style set */
+  text-decoration: none;      /* removes anchor default text-decoration property of underline */
+  color: #BB96CC;             /* change anchor default text color vaule of blue */
 }
 
-/* img.initial:hover{
-  opacity: 0.5;
-  background: ;
-} */
-a{
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #BB96CC;
-}
+/* properties when anchor link is clicked and visit */
 a:visited a:active{
-  text-decoration: none;
-  color: #BB96CC;
+  text-decoration: none;      /* set text-decoration to none, removing default values */
+  color: #BB96CC;             /* change text-color default value */
 }
+/* end of anchor css */
+
+/* css for navigation */
 nav{
-  background: ;
   height: 100px;
-  width: 50%;
+  width: 50%;                 /* total width of navigation is 50% of whole screen*/
   display: flex;
   justify-content: flex-end;        /* nav content align on right */
-  color: #BB96CC;
+  color: #BB96CC;             /* all navigation text color set */
 }
+/* css for navigation ends */
+
+/* css for all <ul> */
 ul{
   list-style-type: none;    /* removes the list style */
+} /* ul css ends */
 
-}
+/* css for navigation contents/items */
+/* css for nav ul and li */
 nav ul{
   margin: 0px;
-  display: flex;
-  flex-direction: row;      /* display ul items in row i.e, the <li> elements */
   padding: 0px;
-
+  display: flex;        /* set ul items in flex display */
+  flex-direction: row;      /* display ul items in row i.e, the <li> elements */
 }
 nav ul li{
   height: 90%;
-  background:  ;
   padding: 0px 20px 10px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
   display: flex;
   align-items: flex-end;        /* put the <li> element at bottom of total height */
-  transition: height 0.2s;
+  transition: height 0.2s;      /* height changes done in hover takes 0.2second time */
 }
+/* css for nav ul and li ends */
 
-li:hover{   /* hover property. apply the following property when mouse pointer is hover above the <li> element */
+ /* hover property. apply the following property when mouse pointer is hover above the <li> element */
+li:hover{
   color: white;
   background: #9979A8;
-  height: 87%;     /* gives animation of nav element i.e, move little up while hover */
-  background: linear-gradient(#412e52, #583973);
-  box-shadow: 0px 2px #f2e1fb;
+  height: 87%;     /* gives animation of nav element i.e, move up while hover */
+  background: linear-gradient(#412e52, #583973);    /* gradient effect when hover */
+  box-shadow: 0px 2px #f2e1fb;    /* <li> shadow on bottm when hovered */
 }
+/* li hover ends */
+/* navigation items css ends */
+
+/* css for h1 */
 h1{
   padding: 10px;
   margin: 0px;
   border-radius: 4px;
   color: #BB96CC;
-  font-family: ;
 }
+/* end of h1 css */
 
 h1:hover{     /* hover property. apply the following property when mouse pointer is hover above the <h1> element */
   color: #c2bdce;
   margin: 0px 0px 3px 0px;
 }
 
+
+/* css main for index.html */
+/* css section for others */
 main{
   margin: 450px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
                                 then "main" would go behind the "div.image" */
-  z-index: 1;
-  position: ;
+  z-index: 1;                 /* stays on top of z-index: 0, for index.html only(stays on top of section) */
   width: 100%;
   background: #C29AE5;
   box-shadow: 0px 0px 10px 0px #432c58;   /* drops shadow on it's upper division i.e, "div.image" */
 }
-div.division{
+div.main{ /* for index */
   height: 700px;
 }
-div.main{
-  height: 700px;
-}
-section{          /* applied for bio.html */
+
+section{          /* applied for others*/
   margin: 100px 0 0 0;
   z-index: 1;
   width: 100%;
   background: #C29AE5;
   box-shadow: 0px 0px 100px 10px #927D9C;   /* drops shadow on it's upper division i.e, "div.image" */
 }
+
+div.division{ /* for others */
+  height: 700px;
+}
+/* css main and section ends */
+
+/* footer css starts */
 footer{
   background: #231529;
-  z-index: 2;
-  box-shadow: 0px 0px 40px 10px #3E244A;   /* drops shadow on "main" */
+  z-index: 2;         /* make possible to cast shadow on above part */
+  box-shadow: 0px 0px 40px 10px #3E244A;   /* drops shadow on above part ie "main" & "section" */
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: column;     /* content display on single column */
+  width: 100%;      /* footer covers 100% width */
 }
 
+
+/* css for connect to me links */
 footer div.connect{
-  margin: 50px 0px 60px 0px;
+  margin: 50px 0px 60px 0px;      /* for better layout */
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;      /* vertically align center */
 }
+
+/* footer all h2 */
 footer h2{
   font-size: 20px;
 }
-footer div.connect h2{
+
+footer div.connect h2{    /* only div.connect h2 */
   padding: 0px 0px 0px 0px;
   margin: 20px;
 }
 
 
-footer div.connect ul {
+footer div.connect ul {   /* only div.connect ul */
   display: flex;
   flex-direction: row;
 }
 
 
-footer div.connect ul li{
+footer div.connect ul li{ /* only div.connect li */
   padding: 5px 0px 10px 0px;
-  margin: 0px 30px 0px 10px;
+  margin: 0px 30px 0px 10px;      /* for better layout */
   color: #BB96CC;
-  background: ;
   display: flex;
   flex-direction: row;
   font-size: 16px;
-  transition: color 0.5s, opacity 1s;
+  transition: color 0.5s, opacity 1s;   /* color changes takes 0.5second and opacity changes takes 1s */
 }
+
+
 footer div.connect ul li:hover{
-  margin: ;
   padding: 0px;
   background: none;
   box-shadow: none;
@@ -211,24 +253,27 @@ footer div.connect ul li:hover{
   opacity: 0.9;
 }
 
+/* social media logos */
 footer div.connect img {
-  height: 25px;
+  height: 25px;     /*height and width set to 25px */
   width: 25px;
-  margin: 0px 15px 0px 0px;
+  margin: 0px 15px 0px 0px;   /* margin between logo and text */
 }
 
 footer div.connect .text{
   display: flex;
-  align-items: center;
+  align-items: center;    /* vertically align to center */
 }
+
 div.footer{
   width: 100%;
   height: ;
   display: flex;
   justify-content: center;
 }
+
 div.footer h2{
   font-size: 10px;
-  margin: 50px 0px 30px 0px;
+  margin: 50px 0px 30px 0px;    /* for better layout */
   padding: 0px;
 }

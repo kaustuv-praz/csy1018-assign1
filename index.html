@@ -6,29 +6,43 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>index</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">      <!--  -->
+    <title>index</title>    <!-- title that appears on the tab of browser -->
+    <link rel="stylesheet" href="css/main.css">     <!-- link the css file named "main.css" of CSS folder -->
   </head>
   <body>    <!--body starts here-->
     <header>    <!-- index file header that contains logo "div" and "nav" part-->
-      <div class="logo">    <!-- banner division on header -->
-        <img class="initial" src="images/logo.png" alt="image" />
-        <img class="hover" src="images/logo_hover.png" alt="image" />
-        <a href="http://kaustuv-praz.github.io/csy1018-assign1"> <h2>kaustuv-praz.github</h2> </a>
+                <!-- header part is divided into 2 part. the div.logo and "nav", both combined covers 100% width -->
+      <!-- logo div starts -->
+      <div class="logo">
+        <img class="initial" src="images/logo.png" alt="image" />     <!-- adding logo image -->
+
+                            <!-- there are actually 2 logo images on same place, it is possible due to position: fixed; property on image,
+                            by doing this the above logo is animated in it's opacity value and causing color changing effect on logo -->
+
+        <img class="hover" src="images/logo_hover.png" alt="image" />     <!-- this image stay behind the "logo.png" for better animation view -->
+        <a href="http://kaustuv-praz.github.io/csy1018-assign1"> <h2>kaustuv-praz.github</h2> </a>  <!-- link to my github profile -->
       </div>
+      <!-- logo div ends -->
 
       <nav>   <!-- navigation part on header -->
         <ul>
-        <!--  <a href="#"> <li>Home</li> </a> -->
+          <!-- ul elements starts -->
           <a href="bio.html"> <li>Bio</li> </a>
           <a href="cv.html"><li>CV</li></a>
           <a href="contact.html"> <li>Contact</li> </a>
         </ul>
       </nav>  <!-- navigation ends-->
+
     </header>   <!-- header ends-->
-    <section class="index">
-      <div class="image" >  <!-- my image quotes and some details goes here -->
+
+    <!-- back section starts  -->
+    <section class="index">   <!-- this part actually lies at the back of the any other div, when the screen is scrolled
+                                  the main part covers up this section portion. As this portion is fixed on it's position -->
+
+      <div class="image" >  <!-- 2 quotes about me goes here -->
+
+        <!-- h3 and h4 elements are inside the div opa1 & opa2 to give background image changing hover effect to quotes -->
         <div class="opa1">
           <h3>Coder, Designer, Gamer..</h3>
         </div>
@@ -36,16 +50,20 @@
           <h4>I make my rules, I break them too...</h4>
         </div>
       </div>
-      <div class="vr">
+      <div class="vr">        <!-- this div is to create the vertical line on the screen of section -->
 
       </div>
 
+      <!-- right side of section profile image and brief info about me -->
       <aside class="profile">
-        <div class="profile_left">
+
+        <!-- this aside container is divided into 2 part div.profile_left and article.info -->
+        <div class="profile_left">      <!-- this div contains the profile image -->
           <img class="dp" src="images/logo_hover.png" alt="profile_image" />
         </div>
-        <article class="info">
+        <article class="info">    <!-- this article contains some info about me -->
           <ul>
+            <!-- brief info -->
             <li>Kaustuv Prajapati</li>
             <li>Born: 30-NOV-1997</li>
             <li>Residence: Kathmandu, Nepal</li>
@@ -56,7 +74,10 @@
           </ul>
         </article>
       </aside>
+      <!-- Right side of section ends -->
     </section>
+    <!-- back section ends  -->
+
     <main>    <!-- main part of index.html starts -->
       <div class="main">
 
@@ -64,53 +85,55 @@
     </main>   <!-- main part ends-->
 
 
-    <footer>    <!-- Footer part starts -->
-      <div class="connect">
+    <!-- Footer part starts -->
+    <footer>
+      <!-- footer is divided in to 2 parts, div.connect & div.footer -->
+      <div class="connect">   <!-- this div contents some contact link to me -->
         <h2>Get Connect</h2>
-        <ul class="initial">
-          <a href="http://gmail.com">
+        <ul class="contact">    <!-- contact links are in list form -->
+          <a href="http://gmail.com">   <!-- below <li> is linked to my gmail address-->
             <li>
-              <img src="images/gmail.png" alt="g" />
+              <img src="images/gmail.png" alt="g" />    <!-- logo of gmail -->  <!-- reference form http://www.google.com -->
               <div class="text">
                 @gmail.com
               </div>
             </li>
           </a>
-          <a href="http://gmail.com">
+          <a href="http://www.facebook.com/">   <!-- below <li> is linked to my facebook profile-->
             <li>
-              <img src="images/facebook.png" alt="f" />
+              <img src="images/facebook.png" alt="f" />   <!-- logo of facebook --> <!-- reference form http://www.facebook.com -->
               <div class="text">
                 fb/kaustuv.praz
               </div>
             </li>
           </a>
-          <a href="http://gmail.com">
+          <a href="http://www.twitter.com/">    <!-- below <li> linked to my twitter account-->
             <li>
-              <img src="images/twitter.png" alt="t" />
+              <img src="images/twitter.png" alt="t" />  <!-- logo of twitter --> <!-- reference from http://www.twitter.com -->
               <div class="text">
                 @kaustuv_praz
               </div>
             </li>
           </a>
-          <a href="http://gmail.com">
+          <a href="http://www.google.com">  <!-- below <li> linked to my google+ profile -->
             <li>
-              <img src="images/google+.png" alt="g+" />
+              <img src="images/google+.png" alt="g+" />   <!-- logo of googel + --> <!-- reference form http://www.google.com -->
               <div class="text">
                 Google+
               </div>
             </li>
           </a>
-          <a href="http://gmail.com">
+          <a href="#">
             <li>
               <img src="images/cell.png" alt="cell" />
-              <div class="text">
+              <div class="text">    <!-- my cell number, viber number -->
                 +977 0000000000
               </div>
             </li>
           </a>
         </ul>
       </div>
-      <div class="footer">
+      <div class="footer">  <!-- contains main footer elements -->
         <h2>&copy; Kaustuv Prajapati</h2>
       </div>
     </footer>   <!-- footer part ends-->
