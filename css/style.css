@@ -64,6 +64,7 @@ div.logo:hover{
 
 } /* logo hover ends */
 
+/* animation is created in logo using 2 different image and animation property */
 /* css for initial image, this images stays on top of the background logo image*/
 img.initial{
   width: 100px;         /* width and height of the image is fixed */
@@ -267,7 +268,6 @@ footer div.connect .text{
 
 div.footer{
   width: 100%;
-  height: ;
   display: flex;
   justify-content: center;
 }

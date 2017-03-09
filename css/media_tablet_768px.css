@@ -21,6 +21,7 @@
     box-shadow: 1px 1px 0px #845699;   /* drops shadow on div.image */
   }
 
+  /* logo division */
   div.logo{
     height: 100%;
     width: 100%;
@@ -29,27 +30,33 @@
     margin: 20px 0px 0px 0px;   /* margin 20px on top so that it don't seems to be attached */
     color: #BB96CC;     /* all the text's color within this div will be set */
   }
- img.initial{
+
+
+  /* logo image property */
+  img.initial{
     opacity: 0;
     position: fixed;
     animation-name: del;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
   }
-  @keyframes del {
+
+  @keyframes del {  /* animation effect is canceled */
     0%{opacity: 0;}
     100%{opacity: 0;}
   }
 
- img.initial:hover{
+  /* logo hover */
+  img.initial:hover{
 
   }
+
   img.hover{
-    position: static;
+    position: static;   /* fixed positon is changed */
 
   }
 
-  nav{
+  nav{  /* navigation bar */
     height: 50%;
     background: ;
     margin: 0px 0px 10px 0px;
@@ -68,30 +75,31 @@
   }
 
   nav li{
-    background: ;
     padding: 0px 20px 0px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
-    display: flex;
-    align-items: flex-end;        /* put the <li> element at bottom of total height */
     height: 80%;
+    transition: margin 1s, background 2s ;
   }
 
   nav li:hover{   /* hover property. apply the following property when mouse pointer is hover above the <li> element */
     color: white;             /* sets text color to white on hover */
-    margin: 5px 0px 0px 0px;
-    height: 80%;
+    margin: 2px 0px 0px 0px;
+    height: 70%;
     background: #9979A8;      /* apply background on hover */
     box-shadow: 0px 0px #f2e1fb;
-    border-radius: 0px 5px;     /* background have curve edges */
+    border-radius: 0px 0px;     /* background have curve edges */
   }
+  /* navigation ends */
 
+
+  /* section css for index only */
   section.index{
     margin: 0px;    /* header fixed position is removed so margin no needed */
     position: static;     /* changes fixed position */
     flex-direction: column;
   }
 
-  div.image{
-    width: 100%;
+  div.quote{
+    width: 100%;    /* width is set to 100% so it covers whole screen */
     height: 50px;
     margin-bottom: 0px;
   }
@@ -134,7 +142,7 @@
   }
   article.info li{
     margin: 0px 0px 0px 0px;
-    font-size: 15px;
+    font-size: 15px;                /* font size and padding are adjust for tablet size */
     padding: 15px 0px 15px 0px;
     justify-content: center;
     color: #BB96CC;
@@ -145,7 +153,10 @@
     color: white;
     background: linear-gradient(to right, #17111d, #2C2037);
   }
+  /* section css ends */
 
+
+  /* main css starts */
   main{
     margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
   }
@@ -159,10 +170,9 @@
   }
 
   h1{
-    margin: px;
     padding: 30px 0px 10px 10px;
   }
-
+  /* main css ends */
 
 
 
@@ -171,27 +181,21 @@
 
   }
 
+    /* footer connect me links */
   footer div.connect{
-    margin: 50px 0px 60px 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
   }
+
   footer h2{
-    font-size: 20px;
+
   }
   footer div.connect h2{
-    padding: 0px 0px 0px 0px;
-    margin: 20px;
+
   }
 
 
   footer div.connect ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+
   }
 
 
@@ -205,35 +209,29 @@
     font-size: 12px;
     transition: color 0.5s, opacity 1s;
   }
+
   footer div.connect ul li:hover{
-    margin: ;
-    padding: 0px;
-    background: none;
-    box-shadow: none;
-    color: white;
-    opacity: 0.9;
+
   }
 
   footer div.connect img {
-    height: 20px;
+    height: 20px;           /* image size is reduced for better view on tablet */
     width: 20px;
     margin: 0px 9px 0px 0px;
   }
 
   footer div.connect .text{
-    display: flex;
-    align-items: center;
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
+
   }
+  /* footer connect me links end*/
+
+  /* main footer content */
   div.footer{
-    width: 100%;
-    height: ;
-    display: flex;
-    justify-content: center;
+
   }
+
   div.footer h2{
-    font-size: 10px;
-    margin: 50px 0px 30px 0px;
-    padding: 0px;
+
   }
+
+/* footer ends */

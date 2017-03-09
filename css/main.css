@@ -8,4 +8,5 @@
  */
 @import "style.css" screen;     /* contains all html files layout css code */
 @import "index.css" screen;     /* contains index.html files css code of specific element of index file */
-@import "media.css" screen;     /* TABLET Device view. Contains css code for 768px and below screens */
+@import "media_tablet_768px.css" screen;     /* TABLET Device view. Contains css code for 768px and below screens */
+@import "media_mobile_320px.css" screen;     /* MOBILE Device view. Contains css code for 320px and below screens */

@@ -3,46 +3,60 @@
   UN-ID: 17421493
 */
 
+/* this css code is only for the section part of index, the section part is below header and above main, section part is also
+    fixed on it's postion just like the header, but the main part lies above it, so while scrolling the main part covers the
+    section part */
+
+/* section css starts */
 section.index{
   width: 100%;
   margin: 100px 0 0 0;      /* header use "fixed position" so to overcome the cons, if this margin is not use
                                 then div.image would go behind the header */
   position: fixed;      /* position is fixed same as header */
   display: flex;
-  flex-direction: row;
+  flex-direction: row;    /* arrange the ".index" div content in single row */
   background: #17111d;
-}
+} /*section css ends */
 
-div.image{
+/* division with quote starts */
+div.quote{
   width: 47%;
-  background: ;
   height: 100%;
-  background-image: url(../images/);
+  background-image: url(../images/);    /* set background image */
   display: flex;
-  flex-direction: column;
-  align-items: ;
-  justify-content: center;
+  flex-direction: column;     /* ".quote" items are align in single column */
+  justify-content: center;    /* vertically align the items on center */
   padding: 90px 0px 82px 0px;
 }
-div.opa1, div.opa2{
-  background-image: url(../images/opa.png);
+/* quote div css ends */
+
+/* each quote have seperate div from them, for making background effect and translation to these quote */
+div.opa1, div.opa2{   /*separate div s common css */
+  background-image: url(../images/opa.png);   /* div.opa1 and div.opa2 background set */
   margin: 10px 0px 10px 20px;
 }
 
+/*separate div s separate css */
 div.opa1{
-  width: 70%;
+  width: 70%;   /* div width set to 70% */
 }
 div.opa2{
-  width: 80%;
-}
+  width: 80%;   /* div width set to 70% */
+} /*separate div s separate css ends */
+
+/* separate div hover property */
 .opa1:hover, .opa2:hover{
+
 }
+
+/* h3 and h4 property of section */
+
 section h3,h4{
-  width: 90%%;
-  color: #BB96CC;
+  width: 80%;
+  color: #BB96CC;   /* text color */
   margin: 20px 0px 20px 0px;
   padding: 0px 0px 0px 15px;
-  animation-name:
+  transition: width 0.5s;   /* change in width */
 }
 
 section h3{
@@ -57,29 +71,33 @@ section h3:hover, h4:hover{
   color: white;
   display: flex;
   align-items: center;
-  background-image: url(../images/opa01.png);
+  background-image: url(../images/opa01.png);   /* background change when hover */
+  width: 96%;
 }
 h4:hover{
   height: 59px;
 }
+/* h3 and h4 css ends */
 
+/* draws the vertical line */
 section div.vr{
   margin: 30px 0px 0px 0px;
   width: 1px;
   height: 300px;
   background: #9170AF;
 }
-div.padding{
-  width: 3%;
-}
+/* vr css ends */
 
+
+/*css for right side aside of the section */
 aside.profile{
   width: 50%;
-  height: px;
   display: flex;
   flex-direction: row;
 }
+  /* the aside is again divided into 2 part, the "img.dp" for image and "article.info" for brief info */
 
+/* left part of aside */
 div.profile_left{
   width: 50%;
   display: flex;
@@ -87,6 +105,7 @@ div.profile_left{
   align-items: center;
 }
 
+/* profile image */
 section img.dp{
   height: 85%;
   width: 75%;
@@ -94,12 +113,15 @@ section img.dp{
   border: 3px solid #412e52;
   transition: height 1s, width 1s;
 }
-section img.dp:hover{
+section img.dp:hover{   /* image while hover */
   border-radius: 220px 231px;
   height: 75%;
   border-radius: 49%;
   border: 2px solid #BB96CC;
 }
+/* profile image css ends */
+
+/* right side of aside, .info css */
 article.info{
   height: 100%;
   width: 50%;
@@ -108,8 +130,8 @@ article.info{
   justify-content: center;
 }
 
+/* this section informations are in list form */
 article.info ul{
-  background: ;
   width: 98%;
   display: flex;
   flex-direction: column;
@@ -122,13 +144,16 @@ article.info li{
   padding: 18px 0px 17px 0px;
   justify-content: center;
   color: #BB96CC;
-  transition: width 0.5s;
+  transition: width 0.5s; /* translation effect of width in hover */
   width: 75%;
 }
 
-article.info li:hover{
+
+article.info li:hover{ /* li elements hover effects css */
   width: 100%;
   box-shadow: none;
   color: white;
   background: linear-gradient(to right, #17111d, #2C2037);
 }
+
+/*css for right side aside of the section ends */

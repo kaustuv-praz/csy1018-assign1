@@ -1,0 +1,301 @@
+/*
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+*/
+@media only screen and (max-width: 320px){   /* apply the following css values for the screen width 320px and below */
+
+/* body css */
+body{
+
+}
+
+header{
+  height: none;
+  justify-content: flex-start;
+  height: auto;
+}
+
+/* logo division */
+div.logo{
+  height: auto;
+  margin: 4px 0px 0px 0px;   /* margin 20px on top so that it don't seems to be attached */
+  justify-content: flex-start;  /* align items on left side */
+  align-items: center;
+  flex-direction: column;
+}
+
+/* logo image property */
+img.initial{
+
+}
+
+img.initial:hover{
+}
+
+img.hover{
+  margin: 0px 0px 15px 0px;
+  height: 40px;
+  width: 45px;
+  opacity: 1;
+
+}
+
+/* css to h2 elements of header part */
+header h2{
+  margin: 0px 0px 0px 0px;
+  font-family: sans-serif;
+  font-size: 12px;      /* fix the font-size of all <h2> elements of header to set value */
+
+}
+/* header <h2> ends */
+
+header a:hover{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav{  /* navigation bar */
+  margin: 26px 0px 0px 0px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;           /* position nav component's at bottom */
+  color: #BB96CC;                  /* nav component's text color */
+}
+ul{
+  margin: 0px 0px 0px 0px;       /* margin at bottom */
+  display: flex;
+  flex-direction: row;      /* display ul items in row i.e, the <li> elements */
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;    /* removes the list style */
+  height: auto;
+}
+
+nav li{
+  padding: 3px 20px 0px 15px;    /* padding 0px on top 20px on right 10px on bottom and 15px on left */
+  align-items: center;        /* put the <li> element at bottom of total height */
+  transition: margin 1s, background 2s ;
+  height: auto;
+}
+
+nav li:hover{   /* hover property. apply the following property when mouse pointer is hover above the <li> element */
+  color: white;             /* sets text color to white on hover */
+  margin: 0px 0px 0px 0px;
+  background: none;      /* apply background on hover */
+  box-shadow: 0px 0px #f2e1fb;
+  border-radius: 0px 0px;     /* background have curve edges */
+  height: auto;
+}
+/* navigation ends */
+
+/* section css for index only */
+section.index{
+  margin: 0px;    /* header fixed position is removed so margin no needed */
+  position: static;     /* changes fixed position */
+  flex-direction: column;
+  height: auto;
+}
+
+div.quote{
+  width: 100%;    /* width is set to 100% so it covers whole screen */
+  height: 100px;
+  margin-bottom: 0px;
+  padding: 20px 0px 30px 0px;
+
+}
+
+div.opa1, div.opa2{   /*separate div s common css */
+  background-image: url(../images/opa.png);   /* div.opa1 and div.opa2 background set */
+  margin: 10px 0px 0px 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/*separate div s separate css */
+div.opa1{
+  width: 83%;   /* div width set to 70% */
+
+}
+div.opa2{
+  width: 92%;   /* div width set to 70% */
+} /*separate div s separate css ends */
+
+/* separate div hover property */
+.opa1:hover, .opa2:hover{
+
+}
+
+/* h3 and h4 property of section */
+
+section h3,h4{
+  width: 100%;
+  color: #BB96CC;   /* text color */
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 15px;
+  transition: width 0.5s;   /* change in width */
+}
+
+section h3{
+  font-size: 20px;
+}
+section h4{
+  font-size: 12px;
+}
+section h3:hover, h4:hover{
+
+}
+h4:hover{
+  height: auto;
+}
+/* h3 and h4 css ends */
+
+
+section div.vr{
+  margin: 0px 0px 20px 20px;
+  height: 1px;
+  background: #9170AF;
+  width: 90%;
+
+}
+
+aside.profile{
+  margin: 0px;
+  width: 100%;
+  flex-direction: column;
+}
+
+div.profile_left{
+  width: 100%;
+}
+
+section img.dp{
+  height: 50%;
+  width: 50%;
+}
+section img.dp:hover{
+
+}
+
+article.info{
+  width: 100%;
+
+}
+
+article.info ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0px 10px 0px;
+
+}
+article.info li{
+  margin: 0px 0px 0px 0px;
+  font-size: 15px;                /* font size and padding are adjust for tablet size */
+  padding: 10px 0px 10px 0px;
+  justify-content: center;
+  color: #BB96CC;
+  width: auto;
+}
+
+article.info li:hover{
+  box-shadow: none;
+  color: white;
+  background: linear-gradient(to right, #17111d, #2C2037);
+}
+/* section css ends */
+
+
+/* main css starts */
+main{
+  margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
+}
+div.main{
+
+}
+section{
+  margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
+}
+div.division{
+}
+
+h1{
+  padding: 30px 0px 10px 10px;
+}
+/* main css ends */
+
+
+
+
+
+/* footer */
+footer{
+  flex-direction: column;
+  height: auto;
+}
+
+  /* footer connect me links */
+footer div.connect{
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0px 0px 0px;
+}
+
+footer h2{
+  margin: 0px 30px 0px 0px;
+}
+footer div.connect h2{
+  margin: 5px 0px 7px 5px;
+}
+
+
+footer div.connect ul {
+  margin: 0px 0px 0px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+footer div.connect ul li{
+  padding: 5px 0px 10px 0px;
+  margin: 0px 5px 0px 0px;
+  color: #BB96CC;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  transition: color 0.5s, opacity 1s;
+}
+
+footer div.connect ul li:hover{
+  height: 30px;
+}
+
+footer div.connect img {
+  height: 19px;           /* image size is reduced for better view on tablet */
+  width: 19px;
+  margin: 0px 9px 0px 0px;
+}
+
+footer div.connect .text{
+  font-size: 10px;
+}
+/* footer connect me links end*/
+
+/* main footer content */
+div.footer{
+  justify-content: flex-start;
+}
+
+footer a{
+  margin: 0px;
+  padding: 0px;
+}
+div.footer h2{
+  margin: 30px 0px 10px 10px;
+  font-size: 7px;
+}
+
+
+/* footer ends */
