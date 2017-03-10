@@ -58,7 +58,6 @@
 
   nav{  /* navigation bar */
     height: 50%;
-    background: ;
     margin: 0px 0px 10px 0px;
     width: 100%;
     display: flex;
@@ -122,10 +121,12 @@
   }
 
   section img.dp{
-
+    height: 82%;
+    width: 65%;
   }
   section img.dp:hover{
-
+    width: 68%;
+    height: 85%;
   }
 
   article.info{
@@ -203,7 +204,6 @@
     padding: 5px 0px 10px 0px;
     margin: 0px 5px 0px 15px;
     color: #BB96CC;
-    background: ;
     display: flex;
     flex-direction: row;
     font-size: 12px;

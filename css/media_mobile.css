@@ -2,7 +2,7 @@
   name: Kaustuv Prajapati
   UN-ID: 17421493
 */
-@media only screen and (max-width: 320px){   /* apply the following css values for the screen width 320px and below */
+@media only screen and (max-width: 425px){   /* apply the following css values for the screen width 320px and below */
 
 /* body css */
 body{
@@ -144,11 +144,9 @@ section h4{
   font-size: 12px;
 }
 section h3:hover, h4:hover{
+  height: 40px;
+}
 
-}
-h4:hover{
-  height: auto;
-}
 /* h3 and h4 css ends */
 
 
@@ -180,7 +178,7 @@ section img.dp:hover{
 
 article.info{
   width: 100%;
-
+  justify-content: center;
 }
 
 article.info ul{
@@ -189,23 +187,23 @@ article.info ul{
   flex-direction: column;
   justify-content: center;
   margin: 20px 0px 10px 0px;
-
 }
 article.info li{
   margin: 0px 0px 0px 0px;
-  font-size: 15px;                /* font size and padding are adjust for tablet size */
+  font-size: 14px;                /* font size and padding are adjust for tablet size */
   padding: 10px 0px 10px 0px;
-  justify-content: center;
   color: #BB96CC;
   width: auto;
 }
 
 article.info li:hover{
+  width: auto;
   box-shadow: none;
   color: white;
   background: linear-gradient(to right, #17111d, #2C2037);
 }
 /* section css ends */
+
 
 
 /* main css starts */

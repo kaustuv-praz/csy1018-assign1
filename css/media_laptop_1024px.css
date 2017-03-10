@@ -3,13 +3,12 @@
   UN-ID: 17421493
 */
 
-/* this css code is only for the section part of index, the section part is below header and above main, section part is also
-    fixed on it's postion just like the header, but the main part lies above it, so while scrolling the main part covers the
-    section part */
 
-/* section css starts */
+/* section for index css starts */
+
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+
 section.index{
-  width: 100%;
   margin: 100px 0 0 0;      /* header use "fixed position" so to overcome the cons, if this margin is not use
                                 then div.image would go behind the header */
   position: fixed;      /* position is fixed same as header */
@@ -25,8 +24,7 @@ div.quote{
   background-image: url(../images/);    /* set background image */
   display: flex;
   flex-direction: column;     /* ".quote" items are align in single column */
-  justify-content: center;    /* vertically align the items on center */
-  padding: 90px 0px 82px 0px;
+  padding: 40px 0px 40px 0px ;
 }
 /* quote div css ends */
 
@@ -60,10 +58,10 @@ section h3,h4{
 }
 
 section h3{
-  font-size: 30px;
+  font-size: 18px;
 }
 section h4{
-  font-size: 20px;
+  font-size: 14px;
 }
 section h3:hover, h4:hover{
   margin: 2px 2px 2px 0px;
@@ -74,16 +72,14 @@ section h3:hover, h4:hover{
   background-image: url(../images/opa01.png);   /* background change when hover */
   width: 96%;
 }
-h4:hover{
-  height: 59px;
-}
+
 /* h3 and h4 css ends */
 
 /* draws the vertical line */
 section div.vr{
   margin: 30px 0px 0px 0px;
   width: 1px;
-  height: 300px;
+  height: 180px;
   background: #9170AF;
 }
 /* vr css ends */
@@ -107,21 +103,19 @@ div.profile_left{
 
 /* profile image */
 section img.dp{
-  height: 80%;
-  width: 75%;
+  height: 75%;
+  width: 70%;
+  margin: 0px 0px 0px 20px;
   border-radius: 120px 120px;
-  border: 3px solid #97859e;
-  box-shadow: 10px 3px 90px #231430;
-  opacity: 0.8;
-  transition: height 1s, width 1s, box-shadow 2s, opacity 1s;
+  border: 3px solid #412e52;
+  transition: height 1s, width 1s;
 }
 section img.dp:hover{   /* image while hover */
   border-radius: 220px 231px;
-  height: 75%;
+  height: 80%;
+  width: 75%;
   border-radius: 49%;
-  opacity: 1;
-  border: 4px solid #BB96CC;
-  box-shadow: 10px 3px 190px #6e2289;
+  border: 2px solid #BB96CC;
 }
 /* profile image css ends */
 
@@ -132,24 +126,25 @@ article.info{
   display: flex;
   align-items: baseline;
   justify-content: center;
+  margin: auto;
 }
 
 /* this section informations are in list form */
 article.info ul{
-  width: 98%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 40px 0px 0px 0px;
+  margin: 25px 0px 0px 0px;
 
 }
 article.info li{
   margin: 0px 0px 0px 0px;
-  font-size: 14px;
-  padding: 15px 0px 15px 0px;
+  font-size: 11px;
+  padding: 10px 0px 10px 0px;
   justify-content: center;
   color: #BB96CC;
   transition: width 0.5s; /* translation effect of width in hover */
-  width: 75%;
+  width: 90%;
 }
 
 
@@ -159,5 +154,20 @@ article.info li:hover{ /* li elements hover effects css */
   color: white;
   background: linear-gradient(to right, #17111d, #2C2037);
 }
-
 /*css for right side aside of the section ends */
+
+
+/* css main for index.html */
+main{
+  margin: 337px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
+                                then "main" would go behind the "div.image" */
+  z-index: 1;                 /* stays on top of z-index: 0, for index.html only(stays on top of section) */
+  width: 100%;
+  background: #C29AE5;
+  box-shadow: 0px 0px 10px 0px #432c58;   /* drops shadow on it's upper division i.e, "div.image" */
+}
+div.main{ /* for index */
+  height: 700px;
+}
+
+}
