@@ -77,10 +77,10 @@ img.initial{
 
 @keyframes opacity {    /* animation properties */
     /* in respect to the animation-duration time, the opacity value is changed */
-  0%{opacity: 0.5}
-  10%{opacity: 0.8}
-  20%{opacity: 0.6}
-  30%{opacity: 0.4}
+  0%{opacity: 0.5; transform: rotateY(90deg);}
+  10%{opacity: 0.8; transform: rotateY(40deg);}
+  20%{opacity: 0.6; transform: rotateY(20deg);}
+  30%{opacity: 0.4; transform: rotateY(0deg);}
   40%{opacity: 0.2}
   50%{opacity: 0.0}
   60%{opacity: 0.2}
@@ -191,11 +191,70 @@ section{          /* applied for others*/
   width: 100%;
   background: #C29AE5;
   box-shadow: 0px 0px 100px 10px #927D9C;   /* drops shadow on it's upper division i.e, "div.image" */
+  display: flex;
+  flex-direction: row;
 }
 
 div.division{ /* for others */
-  height: 700px;
+  height: auto;
+  width: 60%;
 }
+
+section .division h1{
+  margin: 20px 0px 40px 9px;
+  font-size: 50px;
+  color: #412e52;
+}
+
+
+section .division p{
+  font-family: fantasy;
+  margin: 0px 0px 20px 20px;
+  font-size: 22px;
+  text-align: justify;
+  color: #442a5a;
+}
+section .division h6{
+  margin: 20px 0px 0px 9px;
+  text-align: center;
+  color: #201f46;
+}
+section aside{
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+section aside.theboy h1{
+  background: #bc98dc;
+  margin: 0px 0px 0px 10px;
+  padding: 30px 0px 30px 0px;
+  font-size: 50px;
+  color: #57416b;
+  text-align: center;
+  transform: rotateY(0deg);
+  transition: font-size 1s, transform 3s;
+}
+@keyframes opa {
+  0%{opacity: 1}
+  10%{opacity: 0.8}
+  20%{opacity: 0.6}
+  30%{opacity: 0.4}
+  40%{opacity: 0.2}
+  50%{opacity: 0.0}
+  60%{opacity: 0.2}
+  70%{opacity: 0.4}
+  80%{opacity: 0.6}
+  90%{opacity: 0.8}
+  100%{opacity: 1}
+}
+section aside.theboy h1:hover{
+  transform: rotateY(360deg);
+  animation-name: opa;
+  animation-duration: 3s;
+}
+
+
+
 /* css main and section ends */
 
 /* footer css starts */
