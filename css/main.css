@@ -8,6 +8,7 @@
  */
 @import "style.css" screen;     /* contains all html files layout css code, for laptop/desktop large view - 1440px  */
 @import "index.css" screen;     /* contains index.html files css code of specific element of index file */
-@import "media_tablet.css" screen;     /* TABLET Device view. Contains css code for 768px to 426px */
-@import "media_mobile.css" screen;     /* MOBILE Device view. Contains css code for 425px to 320px */
-@import "media_laptop_1024px.css" screen;   /* Medium size laptop. Contains css code for 1024px to 769px */
+@import "bio.css" screen;
+@import "media_tablet.css" screen;     /* TABLET Device view layout. Contains css code for 768px to 426px */
+@import "media_mobile.css" screen;     /* MOBILE Device view layout. Contains css code for 425px to 320px */
+@import "media_laptop.css" screen;   /* Medium size laptop layout. Contains css code for 1024px to 769px */

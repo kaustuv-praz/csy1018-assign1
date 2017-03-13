@@ -1,0 +1,63 @@
+/*
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+*/
+
+/* css only for bio.html */
+
+section div.bioContent{
+  display: flex;
+  flex-direction: row;
+}
+
+section div.bioContent .division{
+  height: auto;
+  width: 60%;
+}
+
+section div.bioContent .division p{
+  font-family: fantasy;
+  margin: 0px 0px 20px 20px;
+  font-size: 22px;
+  color: #442a5a;
+}
+section div.bioContent .division h6{
+  margin: 20px 0px 0px 9px;
+  text-align: center;
+  color: #201f46;
+}
+
+section div.bioContent aside{
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+section aside.theboy h1{
+  margin: 0px 0px 50px 10px;
+  padding: 30px 0px 30px 0px;
+  font-size: 50px;
+  color: #57416b;
+  text-align: center;
+  transform: rotateY(0deg);
+  transition: font-size 1s, transform 3s;
+}
+
+@keyframes opa {
+  0%{opacity: 1}
+  10%{opacity: 0.8}
+  20%{opacity: 0.6}
+  30%{opacity: 0.4}
+  40%{opacity: 0.2}
+  50%{opacity: 0.0}
+  60%{opacity: 0.2}
+  70%{opacity: 0.4}
+  80%{opacity: 0.6}
+  90%{opacity: 0.8}
+  100%{opacity: 1}
+}
+section aside.theboy h1:hover{
+  transform: rotateY(360deg);
+  animation-name: opa;
+  animation-duration: 3s;
+}
+/* css for bio.html ends */

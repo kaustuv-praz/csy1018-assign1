@@ -1,0 +1,122 @@
+/*
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+*/
+
+@media only screen and (max-width: 425px){   /* apply the following css values for the screen width 425px and below */
+  /* section css for index only */
+  section.index{
+    margin: 0px;    /* header fixed position is removed so margin no needed */
+    position: static;     /* changes fixed position */
+    flex-direction: column;
+    height: auto;
+  }
+
+  div.quote{
+    width: 100%;    /* width is set to 100% so it covers whole screen */
+    height: 100px;
+    margin-bottom: 0px;
+    padding: 20px 0px 30px 0px;
+
+  }
+
+  div.opa1, div.opa2{   /*separate div s common css */
+    background-image: url(../images/opa.png);   /* div.opa1 and div.opa2 background set */
+    margin: 10px 0px 0px 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  /*separate div s separate css */
+  div.opa1{
+    width: 83%;   /* div width set to 70% */
+
+  }
+  div.opa2{
+    width: 92%;   /* div width set to 70% */
+  } /*separate div s separate css ends */
+
+  /* separate div hover property */
+  .opa1:hover, .opa2:hover{
+
+  }
+
+  /* h3 and h4 property of section */
+
+  section h3,h4{
+    width: 100%;
+    color: #BB96CC;   /* text color */
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+    transition: width 0.5s;   /* change in width */
+  }
+
+  section h3{
+    font-size: 20px;
+  }
+  section h4{
+    font-size: 12px;
+  }
+  section h3:hover, h4:hover{
+    height: 40px;
+  }
+
+  /* h3 and h4 css ends */
+
+
+  section div.vr{
+    margin: 0px 0px 20px 20px;
+    height: 1px;
+    background: #9170AF;
+    width: 90%;
+
+  }
+
+  aside.profile{
+    margin: 0px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  div.profile_left{
+    width: 100%;
+  }
+
+  section img.dp{
+    height: 50%;
+    width: 50%;
+  }
+  section img.dp:hover{
+
+  }
+
+  article.info{
+    width: 100%;
+    justify-content: center;
+  }
+
+  article.info ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px 10px 0px;
+  }
+  article.info li{
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;                /* font size and padding are adjust for tablet size */
+    padding: 10px 0px 10px 0px;
+    color: #BB96CC;
+    width: auto;
+  }
+
+  article.info li:hover{
+    width: auto;
+    box-shadow: none;
+    color: white;
+    background: linear-gradient(to right, #17111d, #2C2037);
+  }
+  /* section css ends */
+
+}

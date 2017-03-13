@@ -1,0 +1,58 @@
+/*
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+*/
+
+@media only screen and (max-width: 425px){   /* apply the following css values for the screen width 425px and below */
+  section h1.title{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+  }
+  section div.bioContent{
+
+  }
+
+  section div.bioContent .division{
+  }
+
+  section div.bioContent .division p{
+    font-size: 15px;
+    margin: 0px 20px 20px 20px;
+
+  }
+  section div.bioContent .division h6{
+    margin: 20px 10px 0px 9px;
+    text-align: center;
+    color: #201f46;
+  }
+
+  section div.bioContent aside{
+    width: 75%;
+  }
+
+  section aside.theboy h1{
+    background: #bc98dc;
+    margin: 0px 0px 20px 0px;
+    animation-name: opa;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+  }
+
+  @keyframes opa {
+    0%{opacity: 1}
+
+    40%{opacity: 0.5}
+
+
+    70%{opacity: 0}
+
+    90%{opacity: 0.8}
+    100%{opacity: 1}
+  }
+
+  section aside.theboy h1:hover{
+
+  }
+
+}

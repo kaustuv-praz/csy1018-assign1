@@ -1,0 +1,91 @@
+/*
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+*/
+
+/* section css for index only */
+@media only screen and (max-width: 768px){   /* apply the following css values for the screen width 768px and below */
+  section.index{
+    margin: 0px;    /* header fixed position is removed so margin no needed */
+    position: static;     /* changes fixed position */
+    flex-direction: column;
+  }
+
+  div.quote{
+    width: 100%;    /* width is set to 100% so it covers whole screen */
+    height: 50px;
+    margin-bottom: 0px;
+  }
+
+  section div.vr{
+    margin: 0px 0px 20px 20px;
+    height: 1px;
+    background: #9170AF;
+    width: 90%;
+
+  }
+
+  aside.profile{
+    margin: 0px;
+    width: 100%;
+  }
+
+  div.profile_left{
+
+  }
+
+  section img.dp{
+    height: 82%;
+    width: 65%;
+  }
+  section img.dp:hover{
+    width: 68%;
+    height: 85%;
+  }
+
+  article.info{
+
+  }
+
+  article.info ul{
+    background: ;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 10px 35px;
+
+  }
+  article.info li{
+    margin: 0px 0px 0px 0px;
+    font-size: 15px;                /* font size and padding are adjust for tablet size */
+    padding: 15px 0px 15px 0px;
+    justify-content: center;
+    color: #BB96CC;
+  }
+
+  article.info li:hover{
+    box-shadow: none;
+    color: white;
+    background: linear-gradient(to right, #17111d, #2C2037);
+  }
+  /* section css ends */
+
+
+  /* main css starts */
+  main{
+    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
+  }
+  div.main{
+
+  }
+  section{
+    margin: 0px;    /* none of the preceeding blocks are fixed so margin is not neeeded */
+  }
+  div.division{
+  }
+
+  h1{
+    padding: 30px 0px 10px 10px;
+  }
+}
+/* main css ends */
