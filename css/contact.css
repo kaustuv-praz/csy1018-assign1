@@ -1,0 +1,45 @@
+<!--
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+-->
+/* css for contact.html */
+
+section{
+
+}
+
+section div.division{
+}
+
+section div.contactContent h1.title{
+
+}
+
+section .contactContent .division{
+  display: flex;
+  justify-content: center;
+
+}
+
+section form{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+}
+
+section form fieldset{
+  width: 45%;
+  padding: 20px 0px 0px 0px;
+
+}
+
+section form fieldset legend{
+  display: flex;
+}
+
+section form fieldset input{
+  width: 43%;
+  height: 30px;
+  margin: 0px 0px 0px 20px;
+}

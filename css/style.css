@@ -207,7 +207,7 @@ section h1.title{
 footer{
   background: #231529;
   z-index: 2;         /* make possible to cast shadow on above part */
-  box-shadow: 0px 0px 40px 10px #3E244A;   /* drops shadow on above part ie "main" & "section" */
+  box-shadow: 0px 0px 12px 2px #3E244A;   /* drops shadow on above part ie "main" & "section" */
   display: flex;
   flex-direction: column;     /* content display on single column */
   width: 100%;      /* footer covers 100% width */

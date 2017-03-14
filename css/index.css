@@ -51,7 +51,7 @@ div.opa2{
 
 /* h3 and h4 property of section */
 
-section h3,h4{
+section .opa1 h3,.opa2 h4{
   width: 80%;
   color: #BB96CC;   /* text color */
   margin: 20px 0px 20px 0px;
@@ -59,13 +59,13 @@ section h3,h4{
   transition: width 0.5s;   /* change in width */
 }
 
-section h3{
+section div.opa1 h3{
   font-size: 30px;
 }
-section h4{
+section div.opa2 h4{
   font-size: 20px;
 }
-section h3:hover, h4:hover{
+section .opa1 h3:hover,.opa2 h4:hover{
   margin: 2px 2px 2px 0px;
   height: 70px;
   color: white;
@@ -74,7 +74,7 @@ section h3:hover, h4:hover{
   background-image: url(../images/opa01.png);   /* background change when hover */
   width: 96%;
 }
-h4:hover{
+section .opa2 h4:hover{
   height: 59px;
 }
 /* h3 and h4 css ends */

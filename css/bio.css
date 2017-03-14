@@ -30,7 +30,6 @@ section div.bioContent .division h6{
 section div.bioContent aside{
   width: 40%;
   display: flex;
-  align-items: center;
 }
 section aside.theboy h1{
   margin: 0px 0px 50px 10px;
@@ -59,5 +58,18 @@ section aside.theboy h1:hover{
   transform: rotateY(360deg);
   animation-name: opa;
   animation-duration: 3s;
+}
+
+section div.bioContent .division h3{
+  margin: 0px 0px 0px 20px;
+
+  color: #422C55;
+
+}
+section div.bioContent .division h4{
+  margin: 0px 0px 0px 20px;
+  font-size: 15px;
+  color: #57416b;
+
 }
 /* css for bio.html ends */

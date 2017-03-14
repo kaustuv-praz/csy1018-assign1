@@ -34,8 +34,28 @@
     </header>   <!-- header ends-->
 
     <section>     <!-- main section starts -->
-      <div class="division">   <!-- division -->
-
+      <div class="contactContent">   <!-- division -->
+        <h1 class="title"> Get In Touch </h1>
+        <div class="division">
+          <form class="contactForm" action="" method="post">
+            <fieldset>
+              <legend>Your Details</legend>
+                <input type="text" name="firstname" value="" placeholder="Firstname" autofocus=""> 
+                <input type="text" name="lastname" value="" placeholder="Lastname"> <br /> <br />
+                <input type="number" name="ph_number" value="" placeholder="Phone Number"autocomplete="off"> <br /> <br />
+                <input type="email" name="email" value="" placeholder="E-Mail Address" autocomplete="off"> <br /> <br />
+                <input type="text" name="company" value="" placeholder="Company" autocomplete="off"> <br /> <br />
+                <input type="text" name="location" value="" placeholder="Location" > <br /> <br />
+                <input type="text" name="website" value="" placeholder="Your Website">  <br /> <br />
+                <input type="reset" name="detail_reset" value="Reset All Values"> <br /> <br />
+            </fieldset>
+            <fieldset>
+              <legend>Your Message</legend>
+                <input type="text" name="topic" value="" placeholder="Message Topic"> <br /> <br />
+                <textarea name="message" rows="8" cols="40"></textarea>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </section>
     <!-- main section ends -->

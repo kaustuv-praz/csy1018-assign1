@@ -44,7 +44,7 @@
 
   /* h3 and h4 property of section */
 
-  section h3,h4{
+  section .opa1 h3,.opa2 h4{
     width: 100%;
     color: #BB96CC;   /* text color */
     margin: 0px 0px 0px 0px;
@@ -52,13 +52,13 @@
     transition: width 0.5s;   /* change in width */
   }
 
-  section h3{
+  section div.opa1 h3{
     font-size: 20px;
   }
-  section h4{
+  section div.opa2 h4{
     font-size: 12px;
   }
-  section h3:hover, h4:hover{
+  section .opa1 h3:hover,.opa2 h4:hover{
     height: 40px;
   }
 
