@@ -5,6 +5,7 @@
 
 @import "index_laptop.css" screen;
 @import "bio_laptop.css" screen;
+@import "contact_laptop.css" screen;
 
 @media only screen and (max-width: 1024px) and (min-width: 769px){
   header{
@@ -12,7 +13,7 @@
   }
 
   footer{
-    
+
   }
 
 }
