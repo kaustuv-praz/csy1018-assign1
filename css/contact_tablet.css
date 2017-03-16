@@ -1,0 +1,132 @@
+/*
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+*/
+
+@media only screen and (max-width: 768px){   /* apply the following css values for the screen width 768px and below */
+
+  section{
+
+  }
+
+  section div.division{
+  }
+
+  section div.contactContent h1.title{
+    font-size: 35px;
+    margin: 0px;
+  }
+
+  section .contactContent .division{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  section form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-around;
+    margin: 0px 0px 40px 0px;
+
+  }
+
+  section form fieldset{
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px grey;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+  }
+
+  section form fieldset legend{
+    margin: 0px 0px 0px 20px;
+  }
+  section form fieldset legend:hover{
+    color: #5d3f77;
+  }
+
+  section form fieldset div.detail, div.dmessage{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
+
+  section form fieldset div.dmessage{
+    margin: 10px 0px 0px 0px;
+
+  }
+
+
+
+  section form fieldset input{
+    width: 210px;
+    height: 35px;
+    margin: 10px 30px 20px 25px;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid #7a5c94;
+    padding: 0px 0px 0px 20px;
+    font-size: 12px;
+    color: #5a466b;
+    font-size: 15px;
+  }
+
+  section form fieldset input:hover{
+    background: linear-gradient(#c29ae5, #ae87d0);
+    border-bottom: 1px solid #5a466b;
+  }
+
+  section form fieldset input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+    color: #7a5c94;
+    font-size: 12px;
+  }
+
+  section form fieldset input:focus{
+    outline: none;
+    background: linear-gradient(#c29ae5, #ae87d0);
+    border-bottom: 1px solid #5a466b;
+  }
+
+  section form fieldset input[type = url]{
+    width: 556px;
+  }
+
+  section form fieldset input[type = reset]{
+    border: 1px solid #7a5c94;
+    margin: 20px 0px 20px 0px;
+    width: auto;
+    padding: 5px;
+  }
+  section form fieldset input[type = reset]:hover{
+    border: 1px solid #5a466b;
+    background: linear-gradient(#c29ae5, #ae87d0);
+    cursor: pointer;
+  }
+
+  section form textarea{
+    width: 550px;
+    margin: 25px 0px 20px 0px;
+    padding: 10px 5px 10px 10px;
+    background-color: transparent;
+    border:1px solid #7a5c94;
+    color: #5a466b;
+    font-size: 14px;
+
+  }
+  section form fieldset.message input[type = text]{
+    width: 433px;
+    margin: 0px 0px 0px -112px;
+  }
+
+
+  section form fieldset.message input[type = submit]{
+    width: ;
+    padding: ;
+    border: ;
+
+  }
+
+}

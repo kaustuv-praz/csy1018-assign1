@@ -40,19 +40,25 @@
           <form class="contactForm" action="" method="post">
             <fieldset>
               <legend>Your Details</legend>
-                <input type="text" name="firstname" value="" placeholder="Firstname" autofocus=""> 
-                <input type="text" name="lastname" value="" placeholder="Lastname"> <br /> <br />
-                <input type="number" name="ph_number" value="" placeholder="Phone Number"autocomplete="off"> <br /> <br />
-                <input type="email" name="email" value="" placeholder="E-Mail Address" autocomplete="off"> <br /> <br />
-                <input type="text" name="company" value="" placeholder="Company" autocomplete="off"> <br /> <br />
-                <input type="text" name="location" value="" placeholder="Location" > <br /> <br />
-                <input type="text" name="website" value="" placeholder="Your Website">  <br /> <br />
-                <input type="reset" name="detail_reset" value="Reset All Values"> <br /> <br />
+                <div class="detail">
+                  <input type="text" name="firstname" value="" placeholder="Firstname" autofocus="">
+                  <input type="text" name="lastname" value="" placeholder="Lastname">
+                  <input type="tel" name="ph_number" value="" placeholder="Phone Number"autocomplete="off">
+                  <input type="email" name="email" value="" placeholder="E-Mail Address" autocomplete="off">
+                  <input type="text" name="company" value="" placeholder="Company  (optional)" autocomplete="off">
+                  <input type="text" name="location" value="" placeholder="Location  (optional)" >
+                  <input type="url" name="website" value="" placeholder="Your Website  (optional)">
+                  <input type="reset" name="detail_reset" value="Reset All Values">
+                </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="message">
               <legend>Your Message</legend>
-                <input type="text" name="topic" value="" placeholder="Message Topic"> <br /> <br />
-                <textarea name="message" rows="8" cols="40"></textarea>
+                <div class="dmessage">
+                  <input type="text" name="topic" value="" placeholder="Message Topic">
+                  <textarea name="message" rows="10" cols="59" placeholder="Write Your Text"></textarea> 
+                  <input type="submit" name="cancel" value="Cancel">
+                  <input type="submit" name="submit" value="Send">
+                </div>
             </fieldset>
           </form>
         </div>

@@ -4,7 +4,8 @@
 */
 
 @import "index_tablet.css" screen;
-@import "bio_tablet.css";
+@import "bio_tablet.css" screen;
+@import "contact_tablet.css" screen;
 
 @media only screen and (max-width: 768px){   /* apply the following css values for the screen width 768px and below */
 
