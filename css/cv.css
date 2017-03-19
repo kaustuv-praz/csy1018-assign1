@@ -1,0 +1,74 @@
+<!--
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+-->
+
+
+
+section h1.title{
+  font-size: 40px;
+}
+
+section .cvMain{
+  display: flex;
+  justify-content: center;
+}
+
+section div.cvMain div.cvContent{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 80%;
+}
+section div.cvMain div.cvContent ul{
+  background-color: transparent;
+  width: 400px;
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid black;
+  box-shadow: 5px 5px 1px #957aad;
+}
+section div.cvMain div.cvContent li{
+  margin: 0px 0px 0px 0px;
+  font-size: 14px;
+  padding: 0px 0px 20px 60px;
+  color: #39234c;
+  transition: width 0.5s; /* translation effect of width in hover */
+  width: auto;
+  color: #362d3e;
+}
+section div.cvMain div.cvContent li:hover{ /* li elements hover effects css */
+
+}
+
+section div.cvMain div.cvContent h2{
+  padding: 20px 0px 20px 10px;
+  margin: 0px 0px 20px 0px;
+  width: 97%;
+  color: black;
+  background-color: ;
+  text-align: center;
+  box-shadow: none;
+  border-bottom: 1px solid black;
+  transition: background-color 1s, width 0.2s, box-shadow 0.1s, margin 0.2s;
+}
+section div.cvMain div.cvContent h2:hover{
+  background-color: #ad81d4;
+  color: #412e52;
+  width: 98%;
+  box-shadow: 1px 1px 2px #2F1646;
+  border-left: 1px solid black;
+  padding: 20px 0px 20px -10px;
+  margin: 0px 0px 20px -2px;
+
+}
+
+section div.cvMain div.cvContent div.stickman{
+}
+section div.cvMain div.cvContent div.stickman img{
+  width: 60%;
+  height: 80%;
+}

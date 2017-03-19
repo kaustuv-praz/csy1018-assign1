@@ -10,6 +10,7 @@
 @import "index.css" screen;     /* contains index.html files css code of specific element of index file */
 @import "bio.css" screen;       /* contains bio.html files css code of specific element of bio file */
 @import "contact.css" screen;   /* contains contact.html files css code of specific element of contact file */
+@import "cv.css" screen;      /* contains cv.html files css code of specific element of cv file */
 @import "media_tablet.css" screen;     /* TABLET Device view layout. Contains css code for 768px to 426px */
 @import "media_mobile.css" screen;     /* MOBILE Device view layout. Contains css code for 425px to 320px */
 @import "media_laptop.css" screen;   /* Medium size laptop layout. Contains css code for 1024px to 769px */
