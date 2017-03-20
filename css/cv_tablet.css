@@ -1,0 +1,58 @@
+/*
+  name: Kaustuv Prajapati
+  UN-ID: 17421493
+*/
+
+@media only screen and (max-width: 768px){   /* apply the following css values for the screen width 768px and below */
+
+  section h1.title{
+    font-size: 35px;
+  }
+
+  section .cvMain{
+
+  }
+
+  section div.cvMain div.cvContent{
+
+    width: 95%;
+
+  }
+  section div.cvMain div.cvContent ul{
+    background-color: transparent;
+    width: 350px;
+
+  }
+  section div.cvMain div.cvContent li{
+    margin: 0px 0px 0px 0px;
+    font-size: 13px;
+
+  }
+  section div.cvMain div.cvContent li:hover{ /* li elements hover effects css */
+
+  }
+
+  section div.cvMain div.cvContent h2{
+
+    }
+  section div.cvMain div.cvContent h2:hover{
+
+  }
+
+  section div.cvMain div.cvContent div.row1{
+
+  }
+  section div.cvMain div.cvContent div.row2{
+
+  }
+
+  section div.cvMain div.cvContent div.row2 div.skills{
+    display: flex;
+    flex-direction: row;
+  }
+  section div.cvMain div.cvContent div.row2 div.skills h6{
+    margin: 0px 0px 20px 60px;
+
+  }
+
+}
