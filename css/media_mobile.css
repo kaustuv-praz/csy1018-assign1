@@ -6,6 +6,7 @@
 @import "bio_mobile.css" screen;
 @import "contact_mobile.css" screen;
 @import "cv_mobile.css" screen;
+
 @media only screen and (max-width: 425px){   /* apply the following css values for the screen width 425px and below */
 
 /* body css */
@@ -23,9 +24,17 @@ header{
 div.logo{
   height: auto;
   margin: 4px 0px 0px 0px;   /* margin 20px on top so that it don't seems to be attached */
-  justify-content: flex-start;  /* align items on left side */
+  justify-content: center;  /* align items on left side */
   align-items: center;
   flex-direction: column;
+}
+div.logo img.initial{
+  height: 0px;
+  width: 0px;
+}
+div.logo h2{
+  width: auto;
+  text-align: center;
 }
 
 /* logo image property */

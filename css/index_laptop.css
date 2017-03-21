@@ -17,18 +17,18 @@
   /* division with quote starts */
   div.quote{
     width: 47%;
-    height: 100%;
-    background-image: url(../images/);    /* set background image */
     display: flex;
     flex-direction: column;     /* ".quote" items are align in single column */
-    padding: 40px 0px 40px 0px ;
+    justify-content: center;    /* vertically align the items on center */
+    padding: 15px 0px 15px 0px;
+    margin-top: 20px;
   }
   /* quote div css ends */
 
   /* each quote have seperate div from them, for making background effect and translation to these quote */
   div.opa1, div.opa2{   /*separate div s common css */
     background-image: url(../images/opa.png);   /* div.opa1 and div.opa2 background set */
-    margin: 10px 0px 10px 20px;
+    margin: 20px 0px 10px 20px;
   }
 
   /*separate div s separate css */
@@ -46,21 +46,21 @@
 
   /* h3 and h4 property of section */
 
-  section h3,h4{
+  section .opa1 h3,.opa2 h4{
     width: 80%;
     color: #BB96CC;   /* text color */
-    margin: 20px 0px 20px 0px;
-    padding: 0px 0px 0px 15px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 15px;
     transition: width 0.5s;   /* change in width */
   }
 
-  section h3{
+  section div.opa1 h3{
+    font-size: 22px;
+  }
+  section div.opa2 h4{
     font-size: 18px;
   }
-  section h4{
-    font-size: 14px;
-  }
-  section h3:hover, h4:hover{
+  section .opa1 h3:hover,.opa2 h4:hover{
     margin: 2px 2px 2px 0px;
     height: 70px;
     color: white;
@@ -69,14 +69,16 @@
     background-image: url(../images/opa01.png);   /* background change when hover */
     width: 96%;
   }
-
+  section .opa2 h4:hover{
+    height: 59px;
+  }
   /* h3 and h4 css ends */
 
   /* draws the vertical line */
   section div.vr{
     margin: 30px 0px 0px 0px;
     width: 1px;
-    height: 180px;
+    height: 190px;
     background: #9170AF;
   }
   /* vr css ends */
@@ -96,34 +98,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
   }
 
   /* profile image */
   section img.dp{
-    height: 75%;
-    width: 70%;
-    margin: 0px 0px 0px 20px;
+    height: 69%;
+    width: 65%;
     border-radius: 120px 120px;
-    border: 3px solid #412e52;
-    transition: height 1s, width 1s;
+    border: 3px solid #97859e;
+    box-shadow: 10px 3px 90px #231430;
+    opacity: 0.8;
+    transition: height 1s, width 1s, box-shadow 2s, opacity 1s;
   }
   section img.dp:hover{   /* image while hover */
     border-radius: 220px 231px;
-    height: 80%;
-    width: 75%;
+    height: 73%;
     border-radius: 49%;
-    border: 2px solid #BB96CC;
+    opacity: 1;
+    border: 4px solid #BB96CC;
+    box-shadow: 10px 3px 190px #6e2289;
   }
   /* profile image css ends */
 
   /* right side of aside, .info css */
   article.info{
-    height: 100%;
     width: 50%;
     display: flex;
     align-items: baseline;
     justify-content: center;
-    margin: auto;
   }
 
   /* this section informations are in list form */
@@ -131,7 +134,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 17px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 
   }
   article.info li{
@@ -151,19 +154,154 @@
     color: white;
     background: linear-gradient(to right, #17111d, #2C2037);
   }
-  /*css for right side aside of the section ends */
 
 
   /* css main for index.html */
   main{
-    margin: 337px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
+    margin: 339px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
                                   then "main" would go behind the "div.image" */
     z-index: 1;                 /* stays on top of z-index: 0, for index.html only(stays on top of section) */
     width: 100%;
     background: #C29AE5;
     box-shadow: 0px 0px 10px 0px #432c58;   /* drops shadow on it's upper division i.e, "div.image" */
   }
-  div.main{ /* for index */
-    height: 700px;
+
+
+  /* main css starts */
+
+  main .main .greet{
+    background: #a874d6;
   }
+
+  main .main .greet h1{
+    margin: 30px 0px 30px 0px;
+    color: black;
+    font-size: 3.8em;
+    width: inherit;
+    text-align: center;
+  }
+
+  main .main .greet h1{
+    margin: 0px;
+
+  }
+
+  main .main .greet .paragraph{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  main .main .greet .paragraph p{
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.1em;
+    font-style: italic;
+  }
+
+  main .main .links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 555px;
+  }
+  a{
+    width: 33%;
+  }
+  main .main .links .cv, .bio, .contact{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 40px;
+  }
+  main .main .links .vr{
+    width: 1px;
+    margin-top: 70px;
+    height: 430px;
+    background: black;
+  }
+
+  main .main .links .cv{
+
+  }
+
+  main .main .links .bio{
+
+  }
+  main .main .links p{
+    color: black;
+    margin: 0px 0px 0px 0px;
+    width: 40%;
+    font-size: 1em;
+    text-align: center;
+    line-height: 30px;
+  }
+  main .main .links .contact{
+  }
+  main .main .links .contact h2{
+    background-color: #c4b4d2;
+    background-image: url(../images/gmail.png);
+    background-repeat: no-repeat;
+  }
+
+  main .main .links ul{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+  main .main .links li{
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    padding: 0px 0px 20px 0px;
+    transition: width 0.5s; /* translation effect of width in hover */
+    width: auto;
+    color: #362d3e;
+  }
+
+  main .main .links  h2{
+    width: 80px;
+    height: 70px;
+    padding: 48px;
+    font-size: 3.5em;
+    margin: 30px 0px 60px 0px;
+    color: black;
+    text-align: center;
+    border: 3px solid #1d1623;
+    border-radius: 165px;
+    transition: width 0.6s, color 0.6s, border 0.7s, background-color 0.6s, height 0.6s, padding 0.6s, font-size 0.6s ;
+  }
+
+  main .main .links .contact h2{
+    font-size: 1em;
+    margin: 32px 0px 90px 0px;
+  }
+  main .main .links .contact h2:hover{
+    font-size: 1.5em;
+  }
+
+  main .main .links  h2:hover{
+    width: 83px;
+    height: 70px;
+    padding: 58px;
+    font-size: 4em;
+    margin: 30px 0px 60px 0px;
+    color: #412e52;
+    background-color: #a874d6;
+    border: 9px solid #42344F;
+
+  }
+
+
+  /*css for right side aside of the section ends */
+
 }

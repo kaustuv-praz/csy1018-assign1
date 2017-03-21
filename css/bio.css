@@ -17,6 +17,7 @@ section div.bioContent .division{
 
 section div.bioContent .division p{
   font-family: fantasy;
+  text-align: justify;
   margin: 0px 0px 20px 20px;
   font-size: 22px;
   color: #442a5a;
@@ -33,7 +34,7 @@ section div.bioContent aside{
 }
 section aside.theboy h1{
   margin: 0px 0px 50px 10px;
-  padding: 30px 0px 30px 0px;
+  padding: 30px 0px 30px 20px;
   font-size: 50px;
   color: #57416b;
   text-align: center;

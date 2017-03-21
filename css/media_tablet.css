@@ -94,7 +94,9 @@
   }
   /* navigation ends */
 
-
+  section{
+    margin: 0px;
+  }
 
 
   /* footer css */
