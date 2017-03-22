@@ -15,10 +15,29 @@ body{
 }
 
 header{
-  height: none;
   justify-content: flex-start;
   height: auto;
 }
+
+header div a {
+  margin: 0px;
+  padding: 0px;
+}
+header div a.int{
+  margin: 0px;
+  padding: 0px;
+  z-index: 3;
+  position: static;
+  width: 0px;
+  height: 0px;
+}
+header div a.hov{
+  margin: 0px;
+  padding: 0px;
+  position: static;
+  width: auto;
+}
+
 
 /* logo division */
 div.logo{

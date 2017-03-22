@@ -28,7 +28,21 @@ header{ /*header css*/
   z-index: 3;       /* makes header always on top of other containers */
   transition: height 2s;
 } /* header ends */
-
+header div a {
+  margin: 57px 0px 0px 75px;
+}
+header div a.int{
+  margin: 0px;
+  padding: 0px;
+  z-index: 3;
+  position: fixed;
+}
+header div a.hov{
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  width: auto;
+}
 /* css for all h2 elements */
 h2 {
   color: #BB96CC;
@@ -235,12 +249,17 @@ footer div.connect h2{    /* only div.connect h2 */
 footer div.connect ul {   /* only div.connect ul */
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  padding: 0px;
 }
-
+footer div.connect ul a{
+  width: auto;
+}
 
 footer div.connect ul li{ /* only div.connect li */
   padding: 5px 0px 10px 0px;
-  margin: 0px 30px 0px 10px;      /* for better layout */
+  margin: 0px 72px 0px 0px;      /* for better layout */
   color: #BB96CC;
   display: flex;
   flex-direction: row;

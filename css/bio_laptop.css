@@ -45,10 +45,7 @@
     transform: rotateY(0deg);
     transition: font-size 1s, transform 3s;
   }
-
-  @keyframes opa {
-
-  }
+  
   section aside.theboy h1:hover{
     transform: rotateY(360deg);
     animation-name: opa;
