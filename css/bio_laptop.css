@@ -37,18 +37,33 @@
     align-items: flex-start;
   }
   section aside.theboy h1{
-    margin: 100px 0px 50px 10px;
-    padding: 20px 0px 30px 0px;
+    margin: 0px 0px 10px 10px;
+    padding: 20px 0px 0px 0px;
     font-size: 35px;
     color: #57416b;
     text-align: center;
     transform: rotateY(0deg);
     transition: font-size 1s, transform 3s;
   }
-  
+
   section aside.theboy h1:hover{
     transform: rotateY(360deg);
     animation-name: opa;
     animation-duration: 3s;
+  }
+
+  section aside.theboy img{
+    margin-top: 0px;
+    width: 170px;
+    height: 260px;
+  }
+  section aside.theboy div.stickman hr{
+    background-color: #57416b;
+    margin-left: 125px;
+    margin-top: 1px;
+    box-shadow: 0px;
+    border: 0px solid black;
+    height: 1px;
+    width: 40%;
   }
 }

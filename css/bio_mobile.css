@@ -46,4 +46,19 @@
 
   }
 
+  section aside.theboy img{
+    margin-top: 0px;
+    width: 130px;
+    height: 200px;
+  }
+  section aside.theboy div.stickman hr{
+    background-color: #57416b;
+    margin-left: 105px;
+    margin-top: 1px;
+    box-shadow: 0px;
+    border: 0px solid black;
+    height: 1px;
+    width: 40%;
+  }
+
 }

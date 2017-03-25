@@ -13,6 +13,7 @@ section div.bioContent{
 section div.bioContent .division{
   height: auto;
   width: 60%;
+  margin-bottom: 20px;
 }
 
 section div.bioContent .division p{
@@ -32,9 +33,15 @@ section div.bioContent aside{
   width: 40%;
   display: flex;
 }
+section aside.theboy{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 section aside.theboy h1{
-  margin: 0px 0px 50px 10px;
-  padding: 30px 0px 30px 20px;
+  margin: 0px 0px 10px 10px;
+  padding: 0px 0px 0px 20px;
   font-size: 50px;
   color: #57416b;
   text-align: center;
@@ -59,6 +66,29 @@ section aside.theboy h1:hover{
   transform: rotateY(360deg);
   animation-name: opa;
   animation-duration: 3s;
+}
+section aside.theboy div.stickman{
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section aside.theboy img{
+  margin-top: 0px;
+  width: 220px;
+  height: 300px;
+}
+section aside.theboy div.stickman hr{
+  background-color: #57416b;
+  margin-left: 180px;
+  margin-top: 1px;
+  box-shadow: 0px;
+  border: 0px solid black;
+  height: 1px;
+  width: 40%;
 }
 
 section div.bioContent .division h3{
