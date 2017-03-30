@@ -55,10 +55,10 @@
   }
 
   section div.opa1 h3{
-    font-size: 22px;
+    font-size: 19px;
   }
   section div.opa2 h4{
-    font-size: 18px;
+    font-size: 15px;
   }
   section .opa1 h3:hover,.opa2 h4:hover{
     margin: 2px 2px 2px 0px;
@@ -158,7 +158,7 @@
 
   /* css main for index.html */
   main{
-    margin: 339px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
+    margin: 326px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
                                   then "main" would go behind the "div.image" */
     z-index: 1;                 /* stays on top of z-index: 0, for index.html only(stays on top of section) */
     width: 100%;

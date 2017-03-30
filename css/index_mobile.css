@@ -53,7 +53,7 @@
   }
 
   section div.opa1 h3{
-    font-size: 20px;
+    font-size: 15px;
   }
   section div.opa2 h4{
     font-size: 12px;
@@ -211,6 +211,17 @@ main .main .links .contact h2{
   background-repeat: no-repeat;
 }
 
+main .main .links .cv h2{
+  background-color: #a874d6;
+
+}
+
+main .main .links .bio h2{
+  background-color: #a874d6;
+
+}
+
+
 main .main .links ul{
   width: 40%;
   margin: 0px;
@@ -241,9 +252,23 @@ main .main .links  h2{
   border: 3px solid #1d1623;
   background-color: #a874d6;
   border-radius: 165px;
-  transition: width 0.6s, color 0.6s, border 0.7s, background-color 0.6s, height 0.6s, padding 0.6s, font-size 0.6s ;
+
 }
 
+
+main .main .links  h2:hover{
+  width: 50px;
+  height: 45px;
+  padding: 48px;
+  font-size: 2.2em;
+  margin: 30px 0px 40px 0px;
+  color: black;
+  text-align: center;
+  border: 3px solid #1d1623;
+  background-color: #a874d6;
+  border-radius: 165px;
+  
+}
 main .main .links .contact h2{
   font-size: 1em;
   background-color: #a874d6;

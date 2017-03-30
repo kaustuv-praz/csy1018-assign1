@@ -10,6 +10,8 @@
     <title>Contact Here</title>    <!-- title that appears on the tab of browser -->
     <link rel="icon" href="images/logo_hover.png" type="image/png" sizes="16x16 32x32">
     <link rel="stylesheet" href="css/main.css">     <!-- link the css file named "main.css" of CSS folder -->
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Dawning+of+a+New+Day|Gloria+Hallelujah|Lato|Orbitron|Rock+Salt|VT323" rel="stylesheet">
+
   </head>
   <body>    <!--body starts here-->
     <header>    <!-- index file header that contains logo "div" and "nav" part-->
@@ -25,10 +27,34 @@
       <nav>   <!-- navigation part on header -->
         <ul>
           <!-- ul elements starts -->
-          <a href="index.html"><li>Home</li></a>
-          <a href="bio.html"> <li>Bio</li> </a>
-          <a href="cv.html"><li>CV</li></a>
-          <a href="contact.html"> <li>Contact</li> </a>
+          <li>
+            <a href="index.html">
+              <div class="navelement">
+                Home
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="bio.html">
+              <div class="navelement">
+                Bio
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="cv.html">
+              <div class="navelement">
+                CV
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <div class="navelement">
+                Contact
+              </div>
+            </a>
+          </li>
         </ul>
       </nav>  <!-- navigation ends-->
 
@@ -44,7 +70,7 @@
                 <div class="detail">
                   <input type="text" name="firstname" value="" placeholder="Firstname" autofocus="">
                   <input type="text" name="lastname" value="" placeholder="Lastname">
-                  <input type="tel" name="ph_number" value="" placeholder="Phone Number"autocomplete="off">
+                  <input type="tel" name="ph_number" value="" placeholder="Phone Number" autocomplete="off">
                   <input type="email" name="email" value="" placeholder="E-Mail Address" autocomplete="off">
                   <input type="text" name="company" value="" placeholder="Company  (optional)" autocomplete="off">
                   <input type="text" name="location" value="" placeholder="Location  (optional)" >
@@ -73,54 +99,64 @@
       <div class="connect">   <!-- this div contents some contact link to me -->
         <h2>Get Connect</h2>
         <ul class="contact">    <!-- contact links are in list form -->
-          <a href="http://gmail.com">   <!-- below <li> is linked to my gmail address-->
-            <li>
-              <img src="images/gmail.png" alt="g" />    <!-- logo of gmail -->  <!-- reference form http://www.google.com -->
+
+          <li>
+            <a href="http://www.gmail.com">   <!-- below <li> is linked to my gmail address-->
+              <img src="images/gmail.png" alt="gmail" />    <!-- logo of gmail -->  <!-- reference form http://www.google.com -->
               <div class="text">
-                @gmail.com
+                gmail.com
               </div>
-            </li>
-          </a>
-          <a href="http://www.facebook.com/">   <!-- below <li> is linked to my facebook profile-->
-            <li>
-              <img src="images/facebook.png" alt="f" />   <!-- logo of facebook --> <!-- reference form http://www.facebook.com -->
+            </a>
+          </li>
+
+
+          <li>
+            <a href="http://www.facebook.com/kaustuv.praj">   <!-- below <li> is linked to my facebook profile-->
+              <img src="images/facebook.png" alt="fb" />   <!-- logo of facebook --> <!-- reference form http://www.facebook.com -->
               <div class="text">
-                fb/kaustuv.praz
+                fb/kaustuv.praj
               </div>
-            </li>
-          </a>
-          <a href="http://www.twitter.com/">    <!-- below <li> linked to my twitter account-->
-            <li>
-              <img src="images/twitter.png" alt="t" />  <!-- logo of twitter --> <!-- reference from http://www.twitter.com -->
+            </a>
+          </li>
+
+
+          <li>
+            <a href="http://www.twitter.com/">    <!-- below <li> linked to my twitter account-->
+              <img src="images/twitter.png" alt="tweet" />  <!-- logo of twitter --> <!-- reference from http://www.twitter.com -->
               <div class="text">
                 @kaustuv_praz
               </div>
-            </li>
-          </a>
-          <a href="http://www.google.com">  <!-- below <li> linked to my google+ profile -->
-            <li>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="https://plus.google.com/u/1/113416740873665539824">  <!-- below <li> linked to my google+ profile -->
               <img src="images/google+.png" alt="g+" />   <!-- logo of googel + --> <!-- reference form http://www.google.com -->
               <div class="text">
                 Google+
               </div>
-            </li>
-          </a>
-          <a href="https://github.com/kaustuv-praz">  <!-- below <li> linked to my google+ profile -->
-            <li>
-              <img src="images/git.png" alt="g+" />   <!-- logo of git --> <!-- reference form http://www.google.com -->
+            </a>
+          </li>
+
+
+          <li>
+            <a href="https://github.com/kaustuv-praz">  <!-- below <li> linked to my google+ profile -->
+              <img src="images/git.png" alt="git" />   <!-- logo of git --> <!-- reference form http://www.google.com -->
               <div class="text">
                 Git Repo
               </div>
-            </li>
-          </a>
-          <a href="https://www.linkedin.com/in/kaustuv-prajapati-40629113a/">
-            <li>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/kaustuv-prajapati-40629113a/">
               <img src="images/linkedin.png" alt="in" />
               <div class="text">    <!-- my cell number, viber number -->
                 linkin
               </div>
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="footer">  <!-- contains main footer elements -->

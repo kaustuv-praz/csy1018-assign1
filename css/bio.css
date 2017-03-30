@@ -17,10 +17,9 @@ section div.bioContent .division{
 }
 
 section div.bioContent .division p{
-  font-family: fantasy;
   text-align: justify;
   margin: 0px 0px 20px 20px;
-  font-size: 22px;
+  font-size: 20px;
   color: #442a5a;
 }
 section div.bioContent .division h6{
@@ -41,12 +40,14 @@ section aside.theboy{
 
 section aside.theboy h1{
   margin: 0px 0px 10px 10px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 20px 0px 20px;
   font-size: 50px;
   color: #57416b;
   text-align: center;
   transform: rotateY(0deg);
   transition: font-size 1s, transform 3s;
+  font-family: 'VT323';
+  text-shadow: 1px 1px 4px #ffffff;
 }
 
 @keyframes opa {
@@ -78,7 +79,7 @@ section aside.theboy div.stickman{
 
 section aside.theboy img{
   margin-top: 0px;
-  width: 220px;
+  width: 190px;
   height: 300px;
 }
 section aside.theboy div.stickman hr{

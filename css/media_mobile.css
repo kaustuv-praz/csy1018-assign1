@@ -119,6 +119,13 @@ nav li:hover{   /* hover property. apply the following property when mouse point
   border-radius: 0px 0px;     /* background have curve edges */
   height: auto;
 }
+
+nav ul li div.navelement{
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+  width: inherit;
+}
 /* navigation ends */
 
 

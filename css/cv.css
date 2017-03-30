@@ -5,8 +5,11 @@
 
 
 /* css for cv */
+section h1{
+
+
+}
 section h1.title{
-  font-size: 40px;
 }
 
 section .cvMain{
@@ -38,7 +41,7 @@ section div.cvMain div.cvContent li{
   padding: 0px 0px 20px 60px;
   color: #39234c;
   transition: width 0.5s; /* translation effect of width in hover */
-  width: auto;
+  width: 85%;
   color: #362d3e;
 }
 section div.cvMain div.cvContent li:hover{ /* li elements hover effects css */
@@ -48,7 +51,7 @@ section div.cvMain div.cvContent li:hover{ /* li elements hover effects css */
 section div.cvMain div.cvContent h2{
   padding: 20px 0px 20px 10px;
   margin: 0px 0px 20px 0px;
-  width: 97%;
+  width: 75%;
   color: black;
   text-align: center;
   box-shadow: none;
@@ -56,13 +59,8 @@ section div.cvMain div.cvContent h2{
   transition: background-color 1s, width 0.2s, box-shadow 0.1s, margin 0.2s;
 }
 section div.cvMain div.cvContent h2:hover{
-  background-color: #ad81d4;
-  color: #412e52;
-  width: 98%;
-  box-shadow: 1px 1px 2px #2F1646;
-  border-left: 1px solid black;
-  padding: 20px 0px 20px 0px;
-  margin: 0px 0px 20px 0px;
+  box-shadow: 0px 1px 2px #2F1646;
+  border-bottom: 1px solid black;
 }
 
 section div.cvMain div.cvContent div.row1{
@@ -78,6 +76,14 @@ section div.cvMain div.cvContent div.row2{
   justify-content: space-around;
   margin-top: 30px;
 
+}
+
+section div.cvMain div.cvContent div.row2 div.skill{
+  background: green;
+}
+
+section div.cvMain div.cvContent div.row2 div.skill li{
+  background: white;
 }
 
 section div.cvMain div.cvContent div.row2 div.skills{

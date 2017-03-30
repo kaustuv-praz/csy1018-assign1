@@ -9,6 +9,7 @@ body{ /* css for body */
   font-family: sans-serif;    /* set font-style of whole document */
   display: flex;        /* set the container display type to flex */
   flex-direction: column;   /* arrange header components in single column */
+  font-family: 'Lato';
 }
 /* body css ends */
 
@@ -168,6 +169,13 @@ nav ul li:hover{
   box-shadow: 0px 2px #f2e1fb;    /* <li> shadow on bottm when hovered */
 }
 /* li hover ends */
+nav ul li div.navelement{
+  display: flex;
+  align-items: flex-end;
+  height: 90px;
+  width: inherit;
+
+}
 /* navigation items css ends */
 
 /* css for h1 */
@@ -188,7 +196,7 @@ h1:hover{     /* hover property. apply the following property when mouse pointer
 /* css main for index.html */
 /* css section for others */
 main{
-  margin: 450px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
+  margin: 440px 0 0 0;        /* "div.image" use "fixed position" so to overcome the cons, if this margin is not use
                                 then "main" would go behind the "div.image" */
   z-index: 1;                 /* stays on top of z-index: 0, for index.html only(stays on top of section) */
   width: 100%;
@@ -209,8 +217,10 @@ section{          /* applied for others*/
 
 section h1.title{
   margin: 20px 0px 30px 9px;
-  font-size: 50px;
+  font-size: 30px;
   color: #412e52;
+  font-family: 'Rock Salt';
+  text-shadow: 1px 1px 7px #540b94;
 }
 
 /* css main and section ends */
@@ -249,22 +259,19 @@ footer div.connect h2{    /* only div.connect h2 */
 footer div.connect ul {   /* only div.connect ul */
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   width: 90%;
   padding: 0px;
 }
-footer div.connect ul a{
-  width: auto;
-}
+
 
 footer div.connect ul li{ /* only div.connect li */
   padding: 5px 0px 10px 0px;
-  margin: 0px 72px 0px 0px;      /* for better layout */
+  margin: 0px 36px 0px 36px;      /* for better layout */
   color: #BB96CC;
-  display: flex;
-  flex-direction: row;
   font-size: 16px;
   transition: color 0.5s, opacity 1s;   /* color changes takes 0.5second and opacity changes takes 1s */
+  width: auto;
 }
 
 
@@ -274,6 +281,12 @@ footer div.connect ul li:hover{
   box-shadow: none;
   color: white;
   opacity: 0.9;
+}
+
+footer div.connect ul li a{
+  width: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 /* social media logos */
