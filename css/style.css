@@ -3,6 +3,8 @@
   UN-ID: 17421493
 */
 
+/*style.css*/
+
 body{ /* css for body */
   margin: 0;  /* 0px gap between body and screen border */
   padding: 0;   /* 0px gap between body and it's contents */
@@ -312,3 +314,5 @@ div.footer h2{
   margin: 0px 0px 30px 0px;    /* for better layout */
   padding: 0px;
 }
+
+/*end of style.css */

@@ -7,6 +7,8 @@
     fixed on it's postion just like the header, but the main part lies above it, so while scrolling the main part covers the
     section part */
 
+/* index.css */
+
 /* section css starts */
 nav a{
   width: auto;
@@ -316,3 +318,6 @@ main .main .links li{
 
 
 /*css for right side aside of the section ends */
+
+
+/* index.css ends */

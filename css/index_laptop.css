@@ -3,6 +3,9 @@
   UN-ID: 17421493
 */
 /* for index only */
+/*index_laptop.css */
+
+
 @media only screen and (max-width: 1024px) and (min-width: 769px){
 
   section.index{
@@ -305,3 +308,5 @@
   /*css for right side aside of the section ends */
 
 }
+
+/*index_laptop.css ends */

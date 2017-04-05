@@ -75,22 +75,49 @@ section div.cvMain div.cvContent div.row2{
   width: 100%;
   justify-content: space-around;
   margin-top: 30px;
-
 }
 
-section div.cvMain div.cvContent div.row2 div.skill{
-  background: green;
+
+section div.cvMain div.cvContent div.row2 ul li{
+  margin: 0px;
+  padding: 7px 0px 7px 40px;
 }
 
-section div.cvMain div.cvContent div.row2 div.skill li{
-  background: white;
+section div.cvMain div.cvContent div.row2 ul li h2{
+  padding: 20px 0px 20px 10px;
+  margin: 0px 0px 10px 20px;
+  width: 75%;
+  color: black;
 }
 
-section div.cvMain div.cvContent div.row2 div.skills{
+section div.cvMain div.cvContent div.row2 ul li div.skills{
+  width: 90%;
   display: flex;
   flex-direction: row;
 }
-section div.cvMain div.cvContent div.row2 div.skills h6{
-  margin: 0px 0px 20px 60px;
 
+section div.cvMain div.cvContent div.row2 ul li div.skills div.language{
+  width: 50%;
+}
+section div.cvMain div.cvContent div.row2 ul li div.skills div.graphic{
+  width: 50%;
+}
+
+section div.cvMain div.cvContent div.row2 ul li div.skills div.language ul{
+  width: auto;
+  border: 0px solid white;
+  box-shadow: none;
+}
+
+section div.cvMain div.cvContent div.row2 ul li div.skills div.graphic ul{
+  width: auto;
+  border: 0px solid white;
+  box-shadow: none;
+}
+
+
+
+
+section div.cvMain div.cvContent div.row2 ul li a{
+ color: #362d3e;
 }

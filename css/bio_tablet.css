@@ -44,21 +44,26 @@
     width: 200px;
     height: 280px;
   }
+
   section aside.theboy div.stickman hr{
     background-color: #57416b;
     margin-left: 195px;
     margin-top: 1px;
-    box-shadow: 0px;
     border: 0px solid black;
     height: 1px;
     width: 40%;
   }
 
 
-  @keyframes opa { 0%{opacity: 1} 40%{opacity: 0.5} 70%{opacity: 0} 90%{opacity: 0.8} 100%{opacity: 1} }
+  @keyframes opa {
+    0%{opacity: 1}
+    40%{opacity: 0.5}
+    70%{opacity: 0}
+    90%{opacity: 0.8}
+    100%{opacity: 1}
+   }
 
   section aside.theboy h1:hover{
 
   }
-
 }

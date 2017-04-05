@@ -3,6 +3,11 @@
   UN-ID: 17421493
 */
 
+
+/* cv mobile */
+
+
+
 @media only screen and (max-width: 425px){   /* apply the following css values for the screen width 425px and below */
   section h1.title{
     font-size: 23px;
@@ -50,7 +55,7 @@
   section div.cvMain div.cvContent h2{
     padding: 20px 0px 20px 10px;
     margin: 0px 0px 20px 0px;
-    width: 63%;
+    width: 79%%;
     color: black;
     text-align: center;
     box-shadow: none;
