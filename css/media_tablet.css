@@ -64,9 +64,7 @@
     width: 0px;
   }
 
-  @keyframes del {  /* animation effect is canceled */
-    0%{opacity: 0;}  100%{opacity: 0;} }
-
+  
   /* logo hover */
   img.initial:hover{
 
@@ -176,4 +174,5 @@
   div.footer h2{
 
   }
+}
 /* footer ends */
