@@ -8,8 +8,8 @@
 @import "contact_laptop.css" screen;
 @import "cv_laptop.css" screen;
 @media only screen and (max-width: 1024px) and (min-width: 769px){
-  header{
-
+  header div.logo h2{
+    font-size: 0.8em;
   }
 
 

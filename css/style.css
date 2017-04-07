@@ -255,7 +255,14 @@ footer h2{
 footer div.connect h2{    /* only div.connect h2 */
   padding: 0px 0px 0px 0px;
   margin: 20px;
+  transform: scale(1);
+  transition: transform 0.7s;
 }
+
+footer div.connect h2:hover{
+  transform: scale(1.03);
+}
+
 
 
 footer div.connect ul {   /* only div.connect ul */

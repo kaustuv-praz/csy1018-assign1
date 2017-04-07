@@ -15,5 +15,4 @@
 @import "media_mobile.css" screen;     /* MOBILE Device view layout. Contains css code for 425px to 320px */
 @import "media_laptop.css" screen;   /* Medium size laptop layout. Contains css code for 1024px to 769px */
 
-
 /*main.css ends */
